@@ -21,7 +21,11 @@ const ToggleTheme = () => {
     document.documentElement.className = theme;
     localStorage.setItem("theme", theme);
   }, [theme]);
-  return <button onClick={toggleTheme}>ToggleTheme</button>;
+  return (
+    <button onClick={toggleTheme} className="themeBtn">
+      {theme === "light-theme" ? "light" : "dark"}
+    </button>
+  );
 };
 
 export default ToggleTheme;
