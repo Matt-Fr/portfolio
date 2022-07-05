@@ -5,7 +5,9 @@ const AppContext = React.createContext();
 const AppProvider = ({ children }) => {
   const getStorageLanguage = () => {
     let lang = "en";
-    lang = localStorage.getItem;
+    if (localStorage.getItem("language")) {
+      lang = localStorage.getItem;
+    }
     return lang;
   };
 
