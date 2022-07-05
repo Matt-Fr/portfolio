@@ -1,5 +1,6 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
+import LanguageBtn from "../components/LanguageBtn";
 import Navbar from "../components/Navbar";
 import ToggleTheme from "../components/ToggleTheme";
 
@@ -11,6 +12,7 @@ const SharedLayout = () => {
           MattFr
         </Link>
         <Navbar />
+        <LanguageBtn />
         <ToggleTheme />
       </header>
       <main>
