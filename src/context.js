@@ -3,15 +3,15 @@ import React, { useState, useContext } from "react";
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
-  const getStorageLanguage = () => {
-    let lang = "en";
-    if (localStorage.getItem("language")) {
-      lang = localStorage.getItem;
-    }
-    return lang;
-  };
+  //   const getStorageLanguage = () => {
+  //     let lang = "en";
+  //     if (localStorage.getItem("language")) {
+  //       lang = localStorage.getItem;
+  //     }
+  //     return lang;
+  //   };
 
-  const [language, setLanguage] = useState(getStorageLanguage);
+  const [language, setLanguage] = useState("en");
 
   const writeBilingualContent = (eng, fr) => {
     if (language === "en") {
