@@ -1,17 +1,19 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useGlobalContext } from "../context";
 
 const Navbar = () => {
+  const { language, setLanguage, writeBilingualContent } = useGlobalContext();
   return (
     <nav className="navbar">
       <NavLink className="navbar-element" to="/">
-        Home
+        {writeBilingualContent("Home", "Accueil")}
       </NavLink>
       <NavLink className="navbar-element" to="projects">
-        Projects
+        {writeBilingualContent("Projects", "Projets")}
       </NavLink>
       <NavLink className="navbar-element" to="contact">
-        Contact
+        {writeBilingualContent("Contact", "Contact")}
       </NavLink>
     </nav>
   );

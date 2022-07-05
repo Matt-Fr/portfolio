@@ -1,11 +1,23 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
   const [language, setLanguage] = useState("en");
 
-  return <AppContext.Provider value={{}}>{children}</AppContext.Provider>;
+  const writeBilingualContent = (eng, fr) => {
+    if (language === "en") {
+      return eng;
+    } else return fr;
+  };
+
+  return (
+    <AppContext.Provider
+      value={{ language, setLanguage, writeBilingualContent }}
+    >
+      {children}
+    </AppContext.Provider>
+  );
 };
 
 export const useGlobalContext = () => {

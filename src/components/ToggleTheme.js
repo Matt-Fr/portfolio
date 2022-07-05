@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useGlobalContext } from "../context";
 
 const getStoragetheme = () => {
   let theme = "light-theme";
@@ -9,6 +10,8 @@ const getStoragetheme = () => {
 };
 
 const ToggleTheme = () => {
+  const { language, setLanguage, writeBilingualContent } = useGlobalContext();
+
   const [theme, setTheme] = useState(getStoragetheme());
 
   const toggleTheme = () => {
@@ -23,7 +26,9 @@ const ToggleTheme = () => {
   }, [theme]);
   return (
     <button onClick={toggleTheme} className="themeBtn">
-      {theme === "light-theme" ? "light" : "dark"}
+      {theme === "light-theme"
+        ? writeBilingualContent("Light", "Clair")
+        : writeBilingualContent("Dark", "Sombre")}
     </button>
   );
 };
