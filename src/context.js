@@ -11,6 +11,8 @@ const AppProvider = ({ children }) => {
   //     return lang;
   //   };
 
+  const [dataTitle, setDataTitle] = useState("");
+
   const [language, setLanguage] = useState("en");
 
   const writeBilingualContent = (eng, fr) => {
@@ -21,7 +23,13 @@ const AppProvider = ({ children }) => {
 
   return (
     <AppContext.Provider
-      value={{ language, setLanguage, writeBilingualContent }}
+      value={{
+        language,
+        setLanguage,
+        writeBilingualContent,
+        dataTitle,
+        setDataTitle,
+      }}
     >
       {children}
     </AppContext.Provider>
