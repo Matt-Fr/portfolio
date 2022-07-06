@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { useGlobalContext } from "../context";
 import dataEn from "../data";
 import kasa from "../assets/kasa.jpg";
 import ModalProject from "../components/ModalProject";
 
 const Projects = () => {
-  const { dataTitle, setDataTitle } = useGlobalContext();
+  const { dataModal, setDataModal } = useGlobalContext();
   return (
     <>
       <section className="sectionProjects">
@@ -15,8 +15,8 @@ const Projects = () => {
           return (
             <article
               onClick={(e) => {
-                console.log(e.currentTarget);
-                setDataTitle(title);
+                setDataModal({ title: title, description: description });
+                console.log(dataModal);
               }}
               key={id}
               className="sectionProjects-article"

@@ -11,7 +11,7 @@ const AppProvider = ({ children }) => {
   //     return lang;
   //   };
 
-  const [dataTitle, setDataTitle] = useState("");
+  const [dataModal, setDataModal] = useState({ title: "", description: "" });
 
   const [language, setLanguage] = useState("en");
 
@@ -27,8 +27,8 @@ const AppProvider = ({ children }) => {
         language,
         setLanguage,
         writeBilingualContent,
-        dataTitle,
-        setDataTitle,
+        dataModal,
+        setDataModal,
       }}
     >
       {children}
