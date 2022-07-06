@@ -58,3 +58,14 @@ body {
   background-color: var(--clr-font);
   color: var(--clr-bcg);
 }
+
+.sectionProjects {
+  &-article {
+    width: 40rem;
+    height: 40rem;
+    &-img {
+      object-fit: contain;
+      width: 100%;
+    }
+  }
+}
