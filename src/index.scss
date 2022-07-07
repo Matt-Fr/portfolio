@@ -1,3 +1,9 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0 2rem;
   font-family: "Urbanist", sans-serif;
@@ -72,10 +78,22 @@ body {
 
 .modalProject {
   position: fixed;
+  display: none;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: red;
+  width: 0rem;
+  height: 0rem;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.openModal {
   width: 30rem;
   height: 40rem;
+}
+
+.closeIcon {
+  width: 3rem;
+  height: 3rem;
 }

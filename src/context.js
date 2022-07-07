@@ -12,6 +12,7 @@ const AppProvider = ({ children }) => {
   //   };
 
   const [dataModal, setDataModal] = useState({ title: "", description: "" });
+  const [openModal, setOpenModal] = useState(false);
 
   const [language, setLanguage] = useState("en");
 
@@ -29,6 +30,8 @@ const AppProvider = ({ children }) => {
         writeBilingualContent,
         dataModal,
         setDataModal,
+        openModal,
+        setOpenModal,
       }}
     >
       {children}

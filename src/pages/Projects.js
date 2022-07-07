@@ -5,7 +5,7 @@ import kasa from "../assets/kasa.jpg";
 import ModalProject from "../components/ModalProject";
 
 const Projects = () => {
-  const { dataModal, setDataModal } = useGlobalContext();
+  const { dataModal, setDataModal, setOpenModal } = useGlobalContext();
   return (
     <>
       <section className="sectionProjects">
@@ -17,6 +17,7 @@ const Projects = () => {
               onClick={(e) => {
                 setDataModal({ title: title, description: description });
                 console.log(dataModal);
+                setOpenModal(true);
               }}
               key={id}
               className="sectionProjects-article"
