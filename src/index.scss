@@ -66,12 +66,21 @@ body {
 }
 
 .sectionProjects {
+  display: flex;
+  justify-content: space-between;
   &-article {
-    width: 40rem;
-    height: 40rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 20rem;
+    height: 20rem;
+    border: 1px var(--clr-font) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &-img {
       object-fit: contain;
       width: 100%;
+      height: 100%;
     }
   }
 }
@@ -81,13 +90,50 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: red;
+  background-color: var(--clr-font);
+  color: var(--clr-bcg);
   width: 0rem;
   height: 0rem;
+  display: flex;
+  overflow: hidden;
+  &-imgContainer {
+    overflow: hidden;
+    width: auto;
+    height: auto;
+
+    &-img {
+      width: auto;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    &-closeBtn {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      padding: 0;
+      background-color: var(--clr-font);
+      border: none;
+      cursor: pointer;
+
+      &-icon {
+        width: 100%;
+        height: 100%;
+        color: var(--clr-bcg);
+      }
+    }
+  }
 }
 .openModal {
-  width: 30rem;
-  height: 40rem;
+  width: 60%;
+  height: 50%;
 }
 
 .closeModal {
@@ -97,6 +143,6 @@ body {
 }
 
 .closeIcon {
-  width: 3rem;
-  height: 3rem;
+  width: 100%;
+  height: 100%;
 }

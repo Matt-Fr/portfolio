@@ -10,21 +10,24 @@ const Projects = () => {
     <>
       <section className="sectionProjects">
         {dataEn.map((project) => {
-          const { id, title, description, picture } = project;
+          const { id, title, description, picture, logo } = project;
           console.log(project);
           return (
             <article
               onClick={(e) => {
-                setDataModal({ title: title, description: description });
+                setDataModal({
+                  title,
+                  description,
+                  picture,
+                });
                 console.log(dataModal);
                 setOpenModal(true);
               }}
               key={id}
               className="sectionProjects-article"
             >
-              <h1>{title}</h1>
               <img
-                src={kasa}
+                src={logo}
                 alt={title}
                 className="sectionProjects-article-img"
               />
@@ -32,7 +35,7 @@ const Projects = () => {
           );
         })}
       </section>
-      <ModalProject></ModalProject>
+      <ModalProject />
     </>
   );
 };
