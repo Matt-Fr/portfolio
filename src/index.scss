@@ -1,10 +1,10 @@
 html,
 body {
   max-width: 100%;
-  overflow-x: hidden;
 }
 
 body {
+  overflow: hidden;
   margin: 0 2rem;
   font-family: "Urbanist", sans-serif;
 
@@ -73,7 +73,8 @@ body {
     margin: 1rem 0;
     width: 20rem;
     height: 20rem;
-    border: 1px var(--clr-font) solid;
+    -webkit-box-shadow: 0px 1px 4px 5px rgba(116, 116, 116, 0.61);
+    box-shadow: 0px 1px 4px 5px rgba(116, 116, 116, 0.61);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,23 +96,20 @@ body {
   width: 0rem;
   height: 0rem;
   display: flex;
-  overflow: hidden;
-  &-imgContainer {
-    overflow: hidden;
-    width: auto;
-    height: auto;
+  -webkit-box-shadow: 0px 1px 4px 5px rgba(116, 116, 116, 0.61);
+  box-shadow: 0px 1px 4px 5px rgba(116, 116, 116, 0.61);
 
-    &-img {
-      width: auto;
-      height: 100%;
-      object-fit: contain;
-    }
+  &-img {
+    height: 100%;
+    width: auto;
   }
+
   &-info {
     position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+
     &-closeBtn {
       position: absolute;
       right: 0;
@@ -132,7 +130,7 @@ body {
   }
 }
 .openModal {
-  width: 60%;
+  width: 70%;
   height: 50%;
 }
 

@@ -13,13 +13,8 @@ const ModalProject = () => {
         openModal ? "modalProject openModal" : "ModalProject closeModal"
       }
     >
-      <div className="modalProject-imgContainer">
-        <img
-          src={picture}
-          alt={title}
-          className="modalProject-imgContainer-img"
-        />
-      </div>
+      <img src={picture} alt={title} className="modalProject-img" />
+
       <div className="modalProject-info">
         <button
           className="modalProject-info-closeBtn"
