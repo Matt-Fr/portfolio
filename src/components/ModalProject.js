@@ -9,7 +9,11 @@ const ModalProject = () => {
   console.log(title);
 
   return (
-    <div className={openModal ? "modalProject openModal" : "ModalProject"}>
+    <div
+      className={
+        openModal ? "modalProject openModal" : "ModalProject closeModal"
+      }
+    >
       <button
         onClick={() => {
           setOpenModal(false);
