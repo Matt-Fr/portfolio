@@ -4,7 +4,6 @@ body {
 }
 
 body {
-  overflow: hidden;
   margin: 0 2rem;
   font-family: "Urbanist", sans-serif;
 
@@ -68,6 +67,7 @@ body {
 .sectionProjects {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   &-article {
     // background-color: #fff;
     cursor: pointer;
@@ -78,6 +78,7 @@ body {
     -webkit-box-shadow: 0px 1px 4px 5px rgba(116, 116, 116, 0.61);
     box-shadow: 0px 1px 4px 5px rgba(116, 116, 116, 0.61);
     display: flex;
+
     justify-content: center;
     align-items: center;
     &-img {
