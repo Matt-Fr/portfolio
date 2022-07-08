@@ -3,9 +3,10 @@ import { useGlobalContext } from "../context";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const ModalProject = () => {
-  const { dataModal, openModal, setOpenModal } = useGlobalContext();
+  const { writeBilingualContent, dataModal, openModal, setOpenModal } =
+    useGlobalContext();
   console.log(dataModal);
-  const { title, description, picture } = dataModal;
+  const { title, descriptionEn, descriptionFr, picture } = dataModal;
 
   return (
     <div
@@ -26,7 +27,7 @@ const ModalProject = () => {
         </button>
         <div>
           <h1>{title}</h1>
-          <p>{description}</p>
+          <p>{writeBilingualContent(descriptionEn, descriptionFr)}</p>
         </div>
       </div>
     </div>

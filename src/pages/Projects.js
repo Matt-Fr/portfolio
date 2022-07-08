@@ -1,6 +1,6 @@
 import React from "react";
 import { useGlobalContext } from "../context";
-import dataEn from "../data";
+import data from "../data";
 import kasa from "../assets/kasa.jpg";
 import ModalProject from "../components/ModalProject";
 
@@ -9,15 +9,17 @@ const Projects = () => {
   return (
     <>
       <section className="sectionProjects">
-        {dataEn.map((project) => {
-          const { id, title, description, picture, logo } = project;
+        {data.map((project) => {
+          const { id, title, descriptionEn, descriptionFr, picture, logo } =
+            project;
           console.log(project);
           return (
             <article
               onClick={(e) => {
                 setDataModal({
                   title,
-                  description,
+                  descriptionEn,
+                  descriptionFr,
                   picture,
                 });
                 console.log(dataModal);
