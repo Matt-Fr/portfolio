@@ -10,9 +10,18 @@ const Projects = () => {
     <>
       <section className="sectionProjects">
         {data.map((project) => {
-          const { id, title, descriptionEn, descriptionFr, picture, logo } =
-            project;
-          console.log(project);
+          const {
+            id,
+            title,
+            descriptionEn,
+            descriptionFr,
+            picture,
+            logo,
+            tools,
+            demo,
+            linkGithub,
+          } = project;
+
           return (
             <article
               onClick={(e) => {
@@ -21,8 +30,11 @@ const Projects = () => {
                   descriptionEn,
                   descriptionFr,
                   picture,
+                  tools,
+                  demo,
+                  linkGithub,
                 });
-                console.log(dataModal);
+
                 setOpenModal(true);
               }}
               key={id}

@@ -5,8 +5,16 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 const ModalProject = () => {
   const { writeBilingualContent, dataModal, openModal, setOpenModal } =
     useGlobalContext();
-  console.log(dataModal);
-  const { title, descriptionEn, descriptionFr, picture } = dataModal;
+  const {
+    title,
+    descriptionEn,
+    descriptionFr,
+    picture,
+    tools,
+    demo,
+    linkGithub,
+  } = dataModal;
+  console.log(tools);
 
   return (
     <div
@@ -28,6 +36,13 @@ const ModalProject = () => {
         <div>
           <h1>{title}</h1>
           <p>{writeBilingualContent(descriptionEn, descriptionFr)}</p>
+          <h3>{writeBilingualContent("about", "info")}</h3>
+          <div>
+            {tools &&
+              tools.map(() => {
+                return;
+              })}
+          </div>
         </div>
       </div>
     </div>
