@@ -39,8 +39,8 @@ const ModalProject = () => {
           <h3>{writeBilingualContent("about", "info")}</h3>
           <div>
             {tools &&
-              tools.map(() => {
-                return;
+              tools.map((item) => {
+                return <span>{item}</span>;
               })}
           </div>
         </div>

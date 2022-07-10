@@ -11,7 +11,10 @@ const AppProvider = ({ children }) => {
   //     return lang;
   //   };
 
-  const [dataModal, setDataModal] = useState({ title: "", description: "" });
+  const [dataModal, setDataModal] = useState({
+    title: "",
+    description: "",
+  });
   const [openModal, setOpenModal] = useState(false);
 
   const [language, setLanguage] = useState("en");
