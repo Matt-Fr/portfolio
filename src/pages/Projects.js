@@ -17,7 +17,7 @@ const Projects = () => {
             descriptionFr,
             picture,
             logo,
-            tools,
+            tags,
             demo,
             linkGithub,
           } = project;
@@ -30,7 +30,7 @@ const Projects = () => {
                   descriptionEn,
                   descriptionFr,
                   picture,
-                  tools,
+                  tags,
                   demo,
                   linkGithub,
                 });

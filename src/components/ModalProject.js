@@ -10,11 +10,10 @@ const ModalProject = () => {
     descriptionEn,
     descriptionFr,
     picture,
-    tools,
+    tags,
     demo,
     linkGithub,
   } = dataModal;
-  console.log(tools);
 
   return (
     <div
@@ -26,22 +25,46 @@ const ModalProject = () => {
 
       <div className="modalProject-info">
         <button
-          className="modalProject-info-closeBtn"
+          className="modalProject-closeBtn"
           onClick={() => {
             setOpenModal(false);
           }}
         >
-          <AiOutlineCloseCircle className="modalProject-info-closeBtn-icon"></AiOutlineCloseCircle>
+          <AiOutlineCloseCircle className="modalProject-closeBtn-icon"></AiOutlineCloseCircle>
         </button>
-        <div>
-          <h1>{title}</h1>
-          <p>{writeBilingualContent(descriptionEn, descriptionFr)}</p>
-          <h3>{writeBilingualContent("about", "info")}</h3>
-          <div>
-            {tools &&
-              tools.map((item) => {
-                return <span>{item}</span>;
+        <div className=" modalProject-info">
+          <h1 className="modalProject-info-title">{title}</h1>
+          <p className="modalProject-info-description">
+            {writeBilingualContent(descriptionEn, descriptionFr)}
+          </p>
+          <h3 className="modalProject-info-about">
+            {writeBilingualContent("about", "info")}
+          </h3>
+          <div className="modalProject-info-tags">
+            {tags &&
+              tags.map((tag) => {
+                return (
+                  <span className="modalProject-info-tags-tag">{tag}</span>
+                );
               })}
+          </div>
+          <div className="modalProject-info-links">
+            <a
+              className="modalProject-info-links-link"
+              href={demo}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Demo
+            </a>
+            <a
+              className="modalProject-info-links-link"
+              href={linkGithub}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>
           </div>
         </div>
       </div>
