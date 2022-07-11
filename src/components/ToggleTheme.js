@@ -10,7 +10,7 @@ const getStoragetheme = () => {
 };
 
 const ToggleTheme = () => {
-  const { language, setLanguage, writeBilingualContent } = useGlobalContext();
+  const { writeBilingualContent } = useGlobalContext();
 
   const [theme, setTheme] = useState(getStoragetheme());
 

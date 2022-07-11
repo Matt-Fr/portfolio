@@ -4,7 +4,7 @@ import data from "../data";
 import ModalProject from "../components/ModalProject";
 
 const Projects = () => {
-  const { dataModal, setDataModal, setOpenModal } = useGlobalContext();
+  const { setDataModal, setOpenModal } = useGlobalContext();
   return (
     <>
       <section className="sectionProjects">
