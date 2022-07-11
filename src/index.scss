@@ -3,6 +3,31 @@ body {
   max-width: 100%;
 }
 
+@keyframes up-to-down {
+  0% {
+    transform: translateY(-4rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes down-to-up {
+  0% {
+    transform: translateY(4rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+section {
+  animation: down-to-up ease-in-out 500ms;
+}
+
 body {
   margin: 0 2rem;
   font-family: "Urbanist", sans-serif;
@@ -35,6 +60,7 @@ body {
 }
 
 .mainHeader {
+  animation: up-to-down 800ms ease-in-out;
   display: flex;
   justify-content: space-between;
   padding: 2rem 0;
@@ -96,6 +122,7 @@ body {
   transform: translate(-50%, -50%);
   background-color: var(--clr-bcg);
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .backgroundModalOpen {
@@ -169,7 +196,7 @@ body {
 .openModal {
   width: 90%;
   height: 60%;
-  transition: 0.7s linear;
+  transition: 0.7s ease-in-out;
   opacity: 1;
 }
 

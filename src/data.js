@@ -1,12 +1,12 @@
-import kasa from "./assets/kasa.png";
+import kasa from "./assets/kasa.jpg";
 import logoKasa from "./assets/logoKasa.svg";
 import logoFilmFinder from "./assets/logoFilmFinder.svg";
 import logoFisheye from "./assets/logoFisheye.svg";
-import movieFinder from "./assets/movieFinder.png";
-import fisheye from "./assets/fisheye.png";
+import movieFinder from "./assets/movieFinder.jpg";
+import fisheye from "./assets/fisheye.jpg";
 import logoLesPetitsPlats from "./assets/logoLesPetitsPlats.svg";
-import lesPetitsPlats from "./assets/lespetitsplats.png";
-import ohmyfood from "./assets/ohmyfood.png";
+import lesPetitsPlats from "./assets/lespetitsplats.jpg";
+import ohmyfood from "./assets/ohmyfood.jpg";
 import logoOhmyfood from "./assets/logoOhmyfood.svg";
 
 const data = [
