@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { useGlobalContext } from "../context";
 
 const Navbar = () => {
-  const { language, setLanguage, writeBilingualContent } = useGlobalContext();
+  const { writeBilingualContent } = useGlobalContext();
   return (
     <nav className="navbar">
       <NavLink className="navbar-element" to="/">
