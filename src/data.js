@@ -1,11 +1,11 @@
-import kasaPic from "./assets/kasa.jpg";
+import kasa from "./assets/kasa.png";
 import logoKasa from "./assets/logoKasa.svg";
 import logoFilmFinder from "./assets/logoFilmFinder.svg";
 import logoFisheye from "./assets/logoFisheye.svg";
 import movieFinder from "./assets/movieFinder.png";
 import fisheye from "./assets/fisheye.png";
 import logoLesPetitsPlats from "./assets/logoLesPetitsPlats.svg";
-import lesPetitsPlats from "./assets/lesPetitsPlats.png";
+import lesPetitsPlats from "./assets/lespetitsplats.png";
 import ohmyfood from "./assets/ohmyfood.png";
 import logoOhmyfood from "./assets/logoOhmyfood.svg";
 
@@ -14,7 +14,7 @@ const data = [
     id: 1,
     title: "Kasa",
     logo: logoKasa,
-    picture: kasaPic,
+    picture: kasa,
     descriptionEn:
       "I'm baby brunch migas YOLO twee pickled gluten-free. Hell of vape art party, tote bag poutine sartorial blue bottle hella la croix DIY microdosing ennui ramps. Vexillologist portland mlkshk keytar tousled. Flexitarian four dollar toast paleo yuccie tacos dreamcatcher thundercats microdosing hexagon wolf. Prism banh mi poutine, bicycle rights tonx air plant authentic vice farm-to-table deep v truffaut DSA mlkshk letterpress twee. Edison bulb cronut etsy before they sold out, roof party venmo twee palo santo.",
     descriptionFr:

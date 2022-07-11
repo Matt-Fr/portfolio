@@ -1,7 +1,6 @@
 import React from "react";
 import { useGlobalContext } from "../context";
 import data from "../data";
-import kasa from "../assets/kasa.jpg";
 import ModalProject from "../components/ModalProject";
 
 const Projects = () => {

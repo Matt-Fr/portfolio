@@ -96,8 +96,7 @@ body {
   transform: translate(-50%, -50%);
   background-color: var(--clr-font);
   color: var(--clr-bcg);
-  width: 0rem;
-  height: 0rem;
+
   display: flex;
   -webkit-box-shadow: 0px 1px 4px 5px rgba(116, 116, 116, 0.61);
   box-shadow: 0px 1px 4px 5px rgba(116, 116, 116, 0.61);
@@ -152,12 +151,15 @@ body {
 .openModal {
   width: 90%;
   height: 60%;
+  transition: 0.4s;
+  opacity: 1;
 }
 
 .closeModal {
   width: 0;
   height: 0;
   overflow: hidden;
+  opacity: 0;
 }
 
 .closeIcon {
