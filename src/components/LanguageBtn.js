@@ -4,7 +4,7 @@ const LanguageBtn = () => {
   const { language, setLanguage, writeBilingualContent } = useGlobalContext();
 
   return (
-    <div>
+    <div className="langBtns">
       <button
         onClick={() => {
           setLanguage("en");

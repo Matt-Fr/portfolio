@@ -12,8 +12,10 @@ const SharedLayout = () => {
           MattFr
         </Link>
         <Navbar />
-        <LanguageBtn />
-        <ToggleTheme />
+        <div className="switchBtns">
+          <LanguageBtn />
+          <ToggleTheme />
+        </div>
       </header>
       <main>
         <Outlet />
