@@ -63,16 +63,27 @@ body {
   animation: up-to-down 800ms ease-in-out;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 2rem 0;
   border-bottom: 1px var(--clr-font) solid;
+}
+
+.switchBtns {
+  display: flex;
+  justify-content: flex-end;
+  width: 20%;
 }
 
 .logo {
   text-decoration: none;
   color: var(--clr-font);
+  width: 20%;
 }
 
 .navbar {
+  display: flex;
+  justify-content: center;
+  width: 60%;
   &-element {
     color: var(--clr-font);
     text-decoration: none;
