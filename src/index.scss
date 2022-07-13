@@ -57,6 +57,7 @@ body {
   padding: 0.5rem;
   color: var(--clr-font);
   cursor: pointer;
+  font-size: inherit;
 }
 
 .mainHeader {
@@ -66,12 +67,35 @@ body {
   align-items: center;
   padding: 2rem 0;
   border-bottom: 1px var(--clr-font) solid;
+  font-size: 1.2rem;
 }
 
 .switchBtns {
+  font-size: 1.2rem;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   width: 20%;
+}
+
+.langBtns {
+  margin-right: 1rem;
+  &-btn {
+    font-size: inherit;
+    border: 1px solid var(--clr-font);
+    background: var(--clr-bcg);
+    color: var(--clr-font);
+    padding: 0.5rem;
+    cursor: pointer;
+    &-active {
+      background: var(--clr-font);
+      color: var(--clr-bcg);
+    }
+  }
+}
+
+.langBtns-btn:active {
+  color: grey;
 }
 
 .logo {
@@ -93,7 +117,8 @@ body {
 }
 
 .navbar-element:hover {
-  text-decoration: underline;
+  background-color: var(--clr-font);
+  color: var(--clr-bcg);
 }
 
 .active {
