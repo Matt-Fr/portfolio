@@ -40,7 +40,7 @@ body {
 
 .light-theme {
   --clr-bcg: #f6f5f8;
-  --clr-font: rgb(65, 65, 65);
+  --clr-font: #28292c;
   --clr-primary: rgb(78, 161, 245);
   --clr-span1: #e6d2f3;
   --clr-span2: #c3e1f3;
@@ -49,7 +49,7 @@ body {
 
 .dark-theme {
   --clr-bcg: #121012;
-  --clr-font: #fff;
+  --clr-font: #ffffff;
   --clr-primary: rgb(151, 196, 242);
   --clr-span1: #4d7780;
   --clr-span2: #341a3f;
@@ -260,6 +260,12 @@ body {
   }
 }
 
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
 .background {
   z-index: -100;
   position: fixed;
@@ -278,98 +284,143 @@ body {
   backface-visibility: hidden;
   position: absolute;
   animation: move;
-  animation-duration: 20;
+  animation-duration: 25;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
 .background span:nth-child(0) {
   color: var(--clr-span1);
-  top: 14%;
-  left: 54%;
-  animation-duration: 99s;
-  animation-delay: -94s;
-  transform-origin: -2vw -11vh;
-  box-shadow: -100vmin 0 13.145621369603862vmin currentColor;
+  top: 63%;
+  left: 29%;
+  animation-duration: 43s;
+  animation-delay: -136s;
+  transform-origin: -24vw -24vh;
+  box-shadow: -100vmin 0 12.963733013379313vmin currentColor;
 }
 .background span:nth-child(1) {
   color: var(--clr-span2);
-  top: 21%;
-  left: 69%;
-  animation-duration: 156s;
-  animation-delay: -270s;
-  transform-origin: 21vw 24vh;
-  box-shadow: 100vmin 0 13.073673909711577vmin currentColor;
+  top: 77%;
+  left: 48%;
+  animation-duration: 192s;
+  animation-delay: -81s;
+  transform-origin: -17vw 14vh;
+  box-shadow: 100vmin 0 13.165862115286851vmin currentColor;
 }
 .background span:nth-child(2) {
   color: var(--clr-span3);
-  top: 2%;
-  left: 7%;
-  animation-duration: 265s;
-  animation-delay: -245s;
-  transform-origin: -6vw -2vh;
-  box-shadow: -100vmin 0 13.215335566269788vmin currentColor;
+  top: 63%;
+  left: 3%;
+  animation-duration: 98s;
+  animation-delay: -113s;
+  transform-origin: -21vw -18vh;
+  box-shadow: 100vmin 0 13.316198216733303vmin currentColor;
 }
 .background span:nth-child(3) {
   color: var(--clr-span1);
-  top: 70%;
+  top: 6%;
   left: 37%;
-  animation-duration: 111s;
-  animation-delay: -290s;
-  transform-origin: -1vw -14vh;
-  box-shadow: 100vmin 0 12.702367125382846vmin currentColor;
+  animation-duration: 230s;
+  animation-delay: -132s;
+  transform-origin: 4vw -20vh;
+  box-shadow: 100vmin 0 12.8400887041461vmin currentColor;
 }
 .background span:nth-child(4) {
   color: var(--clr-span2);
-  top: 92%;
-  left: 59%;
-  animation-duration: 206s;
-  animation-delay: -36s;
-  transform-origin: 14vw -17vh;
-  box-shadow: 100vmin 0 13.211271687276398vmin currentColor;
+  top: 62%;
+  left: 34%;
+  animation-duration: 134s;
+  animation-delay: -162s;
+  transform-origin: 7vw 20vh;
+  box-shadow: 100vmin 0 12.691508943329243vmin currentColor;
 }
 .background span:nth-child(5) {
   color: var(--clr-span3);
-  top: 41%;
-  left: 40%;
-  animation-duration: 12s;
-  animation-delay: -126s;
-  transform-origin: 0vw 4vh;
-  box-shadow: -100vmin 0 13.254056354019946vmin currentColor;
+  top: 64%;
+  left: 73%;
+  animation-duration: 163s;
+  animation-delay: -54s;
+  transform-origin: 17vw 11vh;
+  box-shadow: 100vmin 0 12.624234494176616vmin currentColor;
 }
 .background span:nth-child(6) {
   color: var(--clr-span1);
-  top: 3%;
-  left: 56%;
-  animation-duration: 129s;
-  animation-delay: -97s;
-  transform-origin: 4vw 20vh;
-  box-shadow: 100vmin 0 13.357271393958499vmin currentColor;
+  top: 84%;
+  left: 28%;
+  animation-duration: 188s;
+  animation-delay: -237s;
+  transform-origin: 19vw 15vh;
+  box-shadow: -100vmin 0 13.159218876290307vmin currentColor;
 }
 .background span:nth-child(7) {
   color: var(--clr-span2);
-  top: 57%;
-  left: 98%;
-  animation-duration: 284s;
-  animation-delay: -196s;
-  transform-origin: 19vw -17vh;
-  box-shadow: 100vmin 0 12.527387135375998vmin currentColor;
+  top: 13%;
+  left: 19%;
+  animation-duration: 187s;
+  animation-delay: -135s;
+  transform-origin: 19vw 15vh;
+  box-shadow: 100vmin 0 13.292735321584887vmin currentColor;
 }
 .background span:nth-child(8) {
   color: var(--clr-span3);
-  top: 28%;
-  left: 97%;
-  animation-duration: 95s;
-  animation-delay: -135s;
-  transform-origin: -21vw -13vh;
-  box-shadow: 100vmin 0 13.231133410517966vmin currentColor;
+  top: 39%;
+  left: 29%;
+  animation-duration: 81s;
+  animation-delay: -131s;
+  transform-origin: -6vw -6vh;
+  box-shadow: -100vmin 0 12.540470843887382vmin currentColor;
 }
 .background span:nth-child(9) {
   color: var(--clr-span1);
-  top: 73%;
-  left: 54%;
-  animation-duration: 174s;
-  animation-delay: -289s;
-  transform-origin: -6vw -15vh;
-  box-shadow: 100vmin 0 12.648425613374554vmin currentColor;
+  top: 93%;
+  left: 43%;
+  animation-duration: 39s;
+  animation-delay: -168s;
+  transform-origin: 16vw -15vh;
+  box-shadow: 100vmin 0 12.891083192942247vmin currentColor;
+}
+.background span:nth-child(10) {
+  color: var(--clr-span2);
+  top: 70%;
+  left: 30%;
+  animation-duration: 12s;
+  animation-delay: -115s;
+  transform-origin: 12vw 0vh;
+  box-shadow: -100vmin 0 13.311406021222183vmin currentColor;
+}
+.background span:nth-child(11) {
+  color: var(--clr-span3);
+  top: 11%;
+  left: 53%;
+  animation-duration: 131s;
+  animation-delay: -223s;
+  transform-origin: -18vw 18vh;
+  box-shadow: -100vmin 0 13.438520077021636vmin currentColor;
+}
+.background span:nth-child(12) {
+  color: var(--clr-span1);
+  top: 55%;
+  left: 45%;
+  animation-duration: 44s;
+  animation-delay: -228s;
+  transform-origin: -9vw -21vh;
+  box-shadow: -100vmin 0 13.339549128235236vmin currentColor;
+}
+.background span:nth-child(13) {
+  color: var(--clr-span2);
+  top: 94%;
+  left: 74%;
+  animation-duration: 111s;
+  animation-delay: -108s;
+  transform-origin: -6vw 8vh;
+  box-shadow: -100vmin 0 13.486023906453712vmin currentColor;
+}
+.background span:nth-child(14) {
+  color: var(--clr-span3);
+  top: 81%;
+  left: 38%;
+  animation-duration: 247s;
+  animation-delay: -95s;
+  transform-origin: 5vw 1vh;
+  box-shadow: -100vmin 0 12.776473440810161vmin currentColor;
 }
