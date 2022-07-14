@@ -39,6 +39,7 @@ const Projects = () => {
               key={id}
               className="sectionProjects-article"
             >
+              <div className="sectionProjects-article-bcg"></div>
               <img
                 src={logo}
                 alt={title}

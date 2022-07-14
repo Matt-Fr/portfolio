@@ -42,9 +42,9 @@ body {
   --clr-bcg: #f6f5f8;
   --clr-font: #28292c;
   --clr-primary: rgb(78, 161, 245);
-  --clr-span1: #e6d2f3;
+  --clr-span1: #dfdcee;
   --clr-span2: #c3e1f3;
-  --clr-span3: #dfdcee;
+  --clr-span3: #e6d2f3;
 }
 
 .dark-theme {
@@ -140,6 +140,7 @@ body {
   grid-gap: 3rem;
 
   &-article {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,9 +148,16 @@ body {
     // background-color: #fff;
     cursor: pointer;
 
-    -webkit-box-shadow: 0px 1px 4px 5px rgba(116, 116, 116, 0.61);
-    box-shadow: 0px 1px 4px 5px rgba(116, 116, 116, 0.61);
+    box-shadow: 0 5px 15px var(--clr-span1);
 
+    &-bcg {
+      z-index: -5;
+      opacity: 75%;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+    }
     &-img {
       width: 100%;
       height: 100%;
