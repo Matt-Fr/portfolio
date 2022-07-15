@@ -32,7 +32,9 @@ const ModalProject = () => {
           openModal ? "modalProject openModal" : "ModalProject closeModal"
         }
       >
-        <div className="modalProject-bcg"></div>
+        <div
+          className={openModal ? "modalProject-bcg" : "ModalProject closeModal"}
+        ></div>
         <div className="modalProject-imgContainer">
           <img
             src={picture}
@@ -50,25 +52,27 @@ const ModalProject = () => {
           >
             <AiOutlineCloseCircle className="modalProject-closeBtn-icon"></AiOutlineCloseCircle>
           </button>
-          <div className=" modalProject-info">
-            <h1 className="modalProject-info-title">{title}</h1>
-            <p className="modalProject-info-description">
+          <div className=" modalProject-info-elements">
+            <h1 className="modalProject-info-elements-title">{title}</h1>
+            <p className="modalProject-info-elements-description">
               {writeBilingualContent(descriptionEn, descriptionFr)}
             </p>
-            <h3 className="modalProject-info-about">
+            <h3 className="modalProject-info-elements-about">
               {writeBilingualContent("about", "info")}
             </h3>
-            <div className="modalProject-info-tags">
+            <div className="modalProject-info-elements-tags">
               {tags &&
                 tags.map((tag) => {
                   return (
-                    <span className="modalProject-info-tags-tag">{tag}</span>
+                    <span className="modalProject-info-elements-tags-tag">
+                      {tag}
+                    </span>
                   );
                 })}
             </div>
-            <div className="modalProject-info-links">
+            <div className="modalProject-info-elements-links">
               <a
-                className="modalProject-info-links-link"
+                className="modalProject-info-elements-links-link"
                 href={demo}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -76,7 +80,7 @@ const ModalProject = () => {
                 Demo
               </a>
               <a
-                className="modalProject-info-links-link"
+                className="modalProject-info-elements-links-link"
                 href={linkGithub}
                 target="_blank"
                 rel="noopener noreferrer"
