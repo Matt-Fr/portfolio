@@ -54,12 +54,7 @@ const ModalProject = () => {
           </button>
           <div className=" modalProject-info-elements">
             <h1 className="modalProject-info-elements-title">{title}</h1>
-            <p className="modalProject-info-elements-description">
-              {writeBilingualContent(descriptionEn, descriptionFr)}
-            </p>
-            <h3 className="modalProject-info-elements-about">
-              {writeBilingualContent("about", "info")}
-            </h3>
+
             <div className="modalProject-info-elements-tags">
               {tags &&
                 tags.map((tag) => {
@@ -70,6 +65,9 @@ const ModalProject = () => {
                   );
                 })}
             </div>
+            <p className="modalProject-info-elements-description">
+              {writeBilingualContent(descriptionEn, descriptionFr)}
+            </p>
             <div className="modalProject-info-elements-links">
               <a
                 className="modalProject-info-elements-links-link"

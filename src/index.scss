@@ -265,9 +265,6 @@ body {
         max-height: 50%;
         overflow: auto;
       }
-      &-about {
-        margin: 0;
-      }
 
       &-tags {
         display: flex;
@@ -277,6 +274,7 @@ body {
           margin-right: 0.5rem;
           padding: 0.5rem;
           border-radius: 2rem;
+          background-color: var(--clr-span1);
         }
       }
       &-links {
