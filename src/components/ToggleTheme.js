@@ -27,8 +27,8 @@ const ToggleTheme = () => {
   return (
     <button onClick={toggleTheme} className="themeBtn">
       {theme === "light-theme"
-        ? writeBilingualContent("Light", "Clair")
-        : writeBilingualContent("Dark", "Sombre")}
+        ? writeBilingualContent("Dark", "Sombre")
+        : writeBilingualContent("Light", "Clair")}
     </button>
   );
 };
