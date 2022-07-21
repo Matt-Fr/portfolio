@@ -58,10 +58,10 @@ body {
 
 .themeBtn {
   font-family: inherit;
-  background-color: var(--clr-bcg);
+  background-color: var(--clr-font);
   border: 1px var(--clr-font) solid;
   padding: 0.5rem;
-  color: var(--clr-font);
+  color: var(--clr-bcg);
   cursor: pointer;
   font-size: inherit;
   transition: 0.5s;
