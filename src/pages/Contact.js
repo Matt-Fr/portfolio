@@ -3,35 +3,27 @@ import React from "react";
 const Contact = () => {
   return (
     <section>
-      <form name="contact" method="POST" data-netlify="true">
-        <p>
+      {/* <form
+        method="post"
+        name="contact v1"
+        data-netlify="true"
+        onSubmit="submit"
+      >
+        <input type="hidden" name="form-name" value="contact v1" />
+        <div>
           <label>
-            Your Name: <input type="text" name="name" />
+            First name
+            <input type="text" name="first-name" />
           </label>
-        </p>
-        <p>
+        </div>
+        <div>
           <label>
-            Your Email: <input type="email" name="email" />
+            Email
+            <input type="email" name="email" />
           </label>
-        </p>
-        <p>
-          <label>
-            Your Role:{" "}
-            <select name="role[]" multiple>
-              <option value="leader">Leader</option>
-              <option value="follower">Follower</option>
-            </select>
-          </label>
-        </p>
-        <p>
-          <label>
-            Message: <textarea name="message"></textarea>
-          </label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
+        </div>
+        <button>Submit the result</button>
+      </form> */}
     </section>
   );
 };
