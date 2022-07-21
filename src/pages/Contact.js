@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <section>
-      {/* <form
+      <form
         method="post"
         name="contact v1"
         data-netlify="true"
@@ -11,19 +11,25 @@ const Contact = () => {
       >
         <input type="hidden" name="form-name" value="contact v1" />
         <div>
-          <label>
+          <label htmlFor="first-name">
             First name
             <input type="text" name="first-name" />
           </label>
         </div>
         <div>
-          <label>
+          <label htmlFor="email">
             Email
             <input type="email" name="email" />
           </label>
         </div>
-        <button>Submit the result</button>
-      </form> */}
+        <div>
+          <label htmlFor="">
+            any Comments?
+            <textarea name="comments"></textarea>
+          </label>
+        </div>
+        <button type="submit">Submit the result</button>
+      </form>
     </section>
   );
 };
