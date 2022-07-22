@@ -5,14 +5,14 @@ import { useGlobalContext } from "../context";
 
 const FormContact = () => {
   const { language, setLanguage, writeBilingualContent } = useGlobalContext();
-  //   const [name, setName] = useState("");
+  const [name, setName] = useState("");
 
-  //   const handleChange = (input) => {
-  //     setName(input.target.value);
-  //   };
-  //   useEffect(() => {
-  //     console.log(name);
-  //   }, [name]);
+  const handleChange = (input) => {
+    setName(input.target.value);
+  };
+  useEffect(() => {
+    console.log(name);
+  }, [name]);
 
   return (
     <div className="contact">
@@ -22,7 +22,7 @@ const FormContact = () => {
         <input
           type="text"
           name="firstname"
-          // onChange={handleChange}
+          onChange={handleChange}
           placeholder={writeBilingualContent("Firstname", "Prénom")}
         />
         <label for="lastname"></label>
@@ -46,8 +46,16 @@ const FormContact = () => {
         <input type="email" name="email" placeholder="Email" />
         <label for="message"></label>
         <textarea name="message" placeholder="Message"></textarea>
-
-        <button type="submit">Send</button>
+        {name ? (
+          <button type="submit">
+            {writeBilingualContent("send", "Envoyer")}
+          </button>
+        ) : (
+          ""
+        )}
+        {/* <button type="submit">
+          {writeBilingualContent("send", "Envoyer")}
+        </button> */}
       </form>
     </div>
   );
