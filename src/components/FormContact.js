@@ -4,15 +4,24 @@ import { useState } from "react";
 import { useGlobalContext } from "../context";
 
 const FormContact = () => {
-  const { language, setLanguage, writeBilingualContent } = useGlobalContext();
-  const [name, setName] = useState("");
+  const { writeBilingualContent } = useGlobalContext();
+  const [firstname, setFirstame] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  const handleChange = (input) => {
-    setName(input.target.value);
+  const handleFirstname = (input) => {
+    setFirstame(input.target.value);
   };
-  useEffect(() => {
-    console.log(name);
-  }, [name]);
+  const handleLastname = (input) => {
+    setLastname(input.target.value);
+  };
+  const handleEmail = (input) => {
+    setEmail(input.target.value);
+  };
+  const handleMessage = (input) => {
+    setMessage(input.target.value);
+  };
 
   return (
     <div className="contact">
@@ -22,40 +31,45 @@ const FormContact = () => {
         <input
           type="text"
           name="firstname"
-          onChange={handleChange}
+          onChange={handleFirstname}
           placeholder={writeBilingualContent("Firstname", "Prénom")}
         />
         <label for="lastname"></label>
         <input
           type="text"
           name="lastname"
-          // onChange={handleChange}
+          onChange={handleLastname}
           placeholder={writeBilingualContent("Lastname", "Nom")}
         />
         <label for="company"></label>
         <input
           type="text"
           name="company"
-          // onChange={handleChange}
           placeholder={writeBilingualContent(
             "Company (optional)",
             "Entreprise (optionnel)"
           )}
         />
         <label for="email"></label>
-        <input type="email" name="email" placeholder="Email" />
+        <input
+          type="email"
+          name="email"
+          onChange={handleEmail}
+          placeholder="Email"
+        />
         <label for="message"></label>
-        <textarea name="message" placeholder="Message"></textarea>
-        {name ? (
+        <textarea
+          name="message"
+          placeholder="Message"
+          onChange={handleMessage}
+        ></textarea>
+        {firstname ? (
           <button type="submit">
             {writeBilingualContent("send", "Envoyer")}
           </button>
         ) : (
           ""
         )}
-        {/* <button type="submit">
-          {writeBilingualContent("send", "Envoyer")}
-        </button> */}
       </form>
     </div>
   );
