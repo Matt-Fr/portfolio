@@ -503,3 +503,50 @@ body {
   transform-origin: 5vw 1vh;
   box-shadow: -100vmin 0 12.776473440810161vmin currentColor;
 }
+
+//form contact
+
+.contactSection {
+  margin: 1rem 0;
+  display: flex;
+  &-leftInfo {
+    width: 50%;
+  }
+}
+
+.contact {
+  width: 50%;
+}
+
+.formContact {
+  padding: 1rem;
+  display: flex;
+  border-radius: 1rem;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 2px 5px 15px 0px var(--clr-span1);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--clr-font);
+    opacity: 5%;
+    border-radius: 1rem;
+    z-index: -1;
+  }
+
+  &-input {
+    font-size: 1rem;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    background: transparent;
+    box-shadow: 5px 5px 15px 5px var(--clr-span1);
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--clr-bcg);
+  }
+}

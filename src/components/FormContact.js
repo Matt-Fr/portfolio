@@ -52,10 +52,17 @@ const FormContact = () => {
 
   return (
     <div className="contact">
-      <form name="contact" method="post" data-netlify="true" onSubmit="submit">
+      <form
+        name="contact"
+        method="post"
+        data-netlify="true"
+        onSubmit="submit"
+        className="formContact"
+      >
         <input type="hidden" name="form-name" value="contact" />
         <label htmlFor="firstName"></label>
         <input
+          className="formContact-input"
           type="text"
           name="firstname"
           onChange={handleFirstname}
@@ -67,11 +74,13 @@ const FormContact = () => {
           name="lastname"
           onChange={handleLastname}
           placeholder={writeBilingualContent("Lastname", "Nom")}
+          className="formContact-input"
         />
         <label htmlFor="company"></label>
         <input
           type="text"
           name="company"
+          className="formContact-input"
           placeholder={writeBilingualContent(
             "Company (optional)",
             "Entreprise (optionnel)"
@@ -82,6 +91,7 @@ const FormContact = () => {
           type="email"
           name="email"
           onChange={handleEmail}
+          className="formContact-input"
           placeholder="Email"
         />
         <label htmlFor="message"></label>
@@ -89,6 +99,7 @@ const FormContact = () => {
           name="message"
           placeholder="Message"
           onChange={handleMessage}
+          className="formContact-input"
         ></textarea>
         {checkFirstname() &&
         checkLastname() &&
