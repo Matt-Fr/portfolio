@@ -50,6 +50,12 @@ const FormContact = () => {
     }
   };
 
+  const checkAll = () => {
+    if (checkFirstname() && checkLastname() && checkEmail() && checkMessage())
+      return true;
+    else return false;
+  };
+
   return (
     <div className="contact">
       <form
@@ -101,16 +107,10 @@ const FormContact = () => {
           onChange={handleMessage}
           className="formContact-input"
         ></textarea>
-        {checkFirstname() &&
-        checkLastname() &&
-        checkEmail() &&
-        checkMessage() ? (
-          <button type="submit">
-            {writeBilingualContent("send", "Envoyer")}
-          </button>
-        ) : (
-          ""
-        )}
+
+        <button type={checkAll() ? "submit" : "button"}>
+          {writeBilingualContent("send", "Envoyer")}
+        </button>
       </form>
     </div>
   );

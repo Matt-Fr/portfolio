@@ -534,7 +534,7 @@ body {
     left: 0;
     bottom: 0;
     background-color: var(--clr-font);
-    opacity: 5%;
+    opacity: 8%;
     border-radius: 1rem;
     z-index: -1;
   }
@@ -548,5 +548,6 @@ body {
     border: none;
     border-radius: 1rem;
     background-color: var(--clr-bcg);
+    color: var(--clr-font);
   }
 }
