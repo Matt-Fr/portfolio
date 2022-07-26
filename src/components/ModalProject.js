@@ -35,7 +35,13 @@ const ModalProject = () => {
         <div
           className={openModal ? "modalProject-bcg" : "ModalProject closeModal"}
         ></div>
-        <div className="modalProject-imgContainer">
+        <div
+          className={
+            openModal
+              ? "modalProject-imgContainer visible"
+              : "modalProject-imgContainer"
+          }
+        >
           <img
             src={picture}
             alt={title}
@@ -43,7 +49,11 @@ const ModalProject = () => {
           />
         </div>
 
-        <div className="modalProject-info">
+        <div
+          className={
+            openModal ? "modalProject-info visible" : "modalProject-info"
+          }
+        >
           <button
             className="modalProject-closeBtn"
             onClick={() => {
