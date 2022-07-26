@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect } from "react";
+
 import { useState } from "react";
 import { useGlobalContext } from "../context";
 
@@ -23,25 +23,46 @@ const FormContact = () => {
     setMessage(input.target.value);
   };
 
+  const checkFirstname = () => {
+    if (firstname.length >= 2) {
+      return true;
+    }
+  };
+  const checkLastname = () => {
+    if (lastname.length >= 2) {
+      return true;
+    }
+  };
+
+  const checkEmail = () => {
+    //eslint-disable-next-line
+    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (email.match(regexEmail)) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
   return (
     <div className="contact">
       <form name="contact" method="post" data-netlify="true" onSubmit="submit">
         <input type="hidden" name="form-name" value="contact" />
-        <label for="firstName"></label>
+        <label htmlFor="firstName"></label>
         <input
           type="text"
           name="firstname"
           onChange={handleFirstname}
           placeholder={writeBilingualContent("Firstname", "Prénom")}
         />
-        <label for="lastname"></label>
+        <label htmlFor="lastname"></label>
         <input
           type="text"
           name="lastname"
           onChange={handleLastname}
           placeholder={writeBilingualContent("Lastname", "Nom")}
         />
-        <label for="company"></label>
+        <label htmlFor="company"></label>
         <input
           type="text"
           name="company"
@@ -50,20 +71,20 @@ const FormContact = () => {
             "Entreprise (optionnel)"
           )}
         />
-        <label for="email"></label>
+        <label htmlFor="email"></label>
         <input
           type="email"
           name="email"
           onChange={handleEmail}
           placeholder="Email"
         />
-        <label for="message"></label>
+        <label htmlFor="message"></label>
         <textarea
           name="message"
           placeholder="Message"
           onChange={handleMessage}
         ></textarea>
-        {firstname ? (
+        {checkFirstname() && checkLastname() && checkEmail() ? (
           <button type="submit">
             {writeBilingualContent("send", "Envoyer")}
           </button>
