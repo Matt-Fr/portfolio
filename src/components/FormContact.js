@@ -44,6 +44,12 @@ const FormContact = () => {
     }
   };
 
+  const checkMessage = () => {
+    if (message.length >= 15) {
+      return true;
+    }
+  };
+
   return (
     <div className="contact">
       <form name="contact" method="post" data-netlify="true" onSubmit="submit">
@@ -84,7 +90,10 @@ const FormContact = () => {
           placeholder="Message"
           onChange={handleMessage}
         ></textarea>
-        {checkFirstname() && checkLastname() && checkEmail() ? (
+        {checkFirstname() &&
+        checkLastname() &&
+        checkEmail() &&
+        checkMessage() ? (
           <button type="submit">
             {writeBilingualContent("send", "Envoyer")}
           </button>

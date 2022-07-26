@@ -148,6 +148,7 @@ body {
   &-article:hover {
     transform: scale(1.1);
     box-shadow: 5px 5px 15px 5px var(--clr-span1);
+    background-color: var(--clr-span1);
   }
   &-article {
     transition-duration: 0.2s;
