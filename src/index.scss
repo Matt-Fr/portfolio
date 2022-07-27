@@ -526,6 +526,9 @@ body {
   position: relative;
   box-shadow: 2px 5px 15px 0px var(--clr-span1);
   align-items: center;
+  &-errorMsg {
+    color: red;
+  }
 
   &::before {
     content: "";
@@ -555,6 +558,10 @@ body {
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    &-error {
+      box-shadow: 5px 5px 15px 5px rgb(221, 151, 151);
+      transition: 0.5s;
+    }
   }
 
   &-btn {

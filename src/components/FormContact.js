@@ -14,20 +14,7 @@ const FormContact = () => {
   const [errorEmail, setErrorEmail] = useState(false);
   const [errorMessage, setErrorMessage] = useState(false);
 
-  const showErrorMessages = () => {
-    if (!firstname) {
-      setErrorFirstame(true);
-    }
-    if (!lastname) {
-      setErrorLastname(true);
-    }
-    if (!setErrorEmail) {
-      setErrorEmail(true);
-    }
-    if (!message) {
-      setErrorMessage(true);
-    }
-  };
+  console.log(errorFirstname);
 
   const handleFirstname = (input) => {
     setFirstame(input.target.value);
@@ -40,6 +27,28 @@ const FormContact = () => {
   };
   const handleMessage = (input) => {
     setMessage(input.target.value);
+  };
+
+  const showErrorMessages = () => {
+    if (!firstname) {
+      setErrorFirstame(true);
+    } else {
+      setErrorFirstame(false);
+    }
+
+    if (!lastname) {
+      setErrorLastname(true);
+    } else {
+      setErrorLastname(false);
+    }
+    if (!email) {
+      setErrorEmail(true);
+    } else {
+      setErrorEmail(false);
+    }
+    if (!message) {
+      setErrorMessage(true);
+    }
   };
 
   const checkFirstname = () => {
@@ -87,20 +96,49 @@ const FormContact = () => {
         <input type="hidden" name="form-name" value="contact" />
         <label htmlFor="firstName"></label>
         <input
-          className="formContact-input"
+          className={
+            errorFirstname
+              ? "formContact-input formContact-input-error"
+              : "formContact-input"
+          }
           type="text"
           name="firstname"
           onChange={handleFirstname}
-          placeholder={writeBilingualContent("Firstname", "Prénom")}
+          placeholder={writeBilingualContent("First name", "Prénom")}
         />
+        {errorFirstname ? (
+          <span className="formContact-errorMsg">
+            {writeBilingualContent(
+              "Please write your first name",
+              "Écrivez votre prénom"
+            )}
+          </span>
+        ) : (
+          ""
+        )}
+
         <label htmlFor="lastname"></label>
         <input
           type="text"
           name="lastname"
           onChange={handleLastname}
-          placeholder={writeBilingualContent("Lastname", "Nom")}
-          className="formContact-input"
+          placeholder={writeBilingualContent("Last name", "Nom")}
+          className={
+            errorLastname
+              ? "formContact-input formContact-input-error"
+              : "formContact-input"
+          }
         />
+        {errorLastname ? (
+          <span className="formContact-errorMsg">
+            {writeBilingualContent(
+              "Please write your last name",
+              "Écrivez votre nom de famille"
+            )}
+          </span>
+        ) : (
+          ""
+        )}
         <label htmlFor="company"></label>
         <input
           type="text"
@@ -116,22 +154,51 @@ const FormContact = () => {
           type="email"
           name="email"
           onChange={handleEmail}
-          className="formContact-input"
+          className={
+            errorEmail
+              ? "formContact-input formContact-input-error"
+              : "formContact-input"
+          }
           placeholder="Email"
         />
+        {errorEmail ? (
+          <span className="formContact-errorMsg">
+            {writeBilingualContent(
+              "Write a valid Email address",
+              "Écrivez une adresse email valide"
+            )}
+          </span>
+        ) : (
+          ""
+        )}
         <label htmlFor="message"></label>
         <textarea
           name="message"
           placeholder="Message"
           onChange={handleMessage}
-          className="formContact-input"
+          className={
+            errorMessage
+              ? "formContact-input formContact-input-error"
+              : "formContact-input"
+          }
         ></textarea>
+        {errorMessage ? (
+          <span className="formContact-errorMsg">
+            {writeBilingualContent(
+              "Must be at least 15 characters",
+              "Écrivez au moins 15 caractères"
+            )}
+          </span>
+        ) : (
+          ""
+        )}
 
         <button
           type={checkAll() ? "submit" : "button"}
           className={
             checkAll() ? "formContact-btn submitBtn" : "formContact-btn fakeBtn"
           }
+          onClick={showErrorMessages}
         >
           {writeBilingualContent("send", "Envoyer")}
         </button>
