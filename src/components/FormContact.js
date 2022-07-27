@@ -9,6 +9,25 @@ const FormContact = () => {
   const [lastname, setLastname] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [errorFirstname, setErrorFirstame] = useState(false);
+  const [errorLastname, setErrorLastname] = useState(false);
+  const [errorEmail, setErrorEmail] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(false);
+
+  const showErrorMessages = () => {
+    if (!firstname) {
+      setErrorFirstame(true);
+    }
+    if (!lastname) {
+      setErrorLastname(true);
+    }
+    if (!setErrorEmail) {
+      setErrorEmail(true);
+    }
+    if (!message) {
+      setErrorMessage(true);
+    }
+  };
 
   const handleFirstname = (input) => {
     setFirstame(input.target.value);
@@ -108,7 +127,12 @@ const FormContact = () => {
           className="formContact-input"
         ></textarea>
 
-        <button type={checkAll() ? "submit" : "button"}>
+        <button
+          type={checkAll() ? "submit" : "button"}
+          className={
+            checkAll() ? "formContact-btn submitBtn" : "formContact-btn fakeBtn"
+          }
+        >
           {writeBilingualContent("send", "Envoyer")}
         </button>
       </form>

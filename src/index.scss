@@ -525,6 +525,7 @@ body {
   flex-direction: column;
   position: relative;
   box-shadow: 2px 5px 15px 0px var(--clr-span1);
+  align-items: center;
 
   &::before {
     content: "";
@@ -549,5 +550,29 @@ body {
     border-radius: 1rem;
     background-color: var(--clr-bcg);
     color: var(--clr-font);
+    width: 90%;
+    font-family: "Urbanist", sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
+
+  &-btn {
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    color: var(--clr-font);
+    width: 10rem;
+    font-family: "Urbanist", sans-serif;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border: 1px solid var(--clr-font);
+    border-radius: 1rem;
+  }
+}
+
+.submitBtn {
+  border: var(--clr-primary) 1px solid;
+  background-color: var(--clr-span3);
 }
