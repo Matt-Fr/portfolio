@@ -522,6 +522,15 @@ body {
       border-radius: 1rem;
       margin-bottom: 2rem;
       padding: 1rem;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        color: var(--clr-bcg);
+        background-color: var(--clr-font);
+        transition: 0.5s;
+      }
 
       &::before {
         content: "";
@@ -536,9 +545,14 @@ body {
         z-index: -1;
       }
 
+      &-title {
+        font-size: 1.7rem;
+      }
+
       &-icon {
         width: 4rem;
         height: 4rem;
+        margin-right: 1rem;
       }
     }
   }
@@ -556,6 +570,9 @@ body {
   position: relative;
   box-shadow: 2px 5px 15px 0px var(--clr-span1);
   align-items: center;
+  &-title {
+    font-size: 2.2rem;
+  }
   &-errorMsg {
     color: rgb(221, 151, 151);
   }
@@ -574,7 +591,7 @@ body {
   }
 
   &-input {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 1rem 0;
     padding: 0.5rem;
     background: transparent;

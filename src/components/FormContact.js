@@ -95,7 +95,9 @@ const FormContact = () => {
         onSubmit="submit"
         className="formContact"
       >
-        <h1>{writeBilingualContent("Contact", "Contactez-moi")}</h1>
+        <h1 className="formContact-title">
+          {writeBilingualContent("Contact", "Contactez-moi")}
+        </h1>
         <input type="hidden" name="form-name" value="contact" />
         <label htmlFor="firstName"></label>
         <input

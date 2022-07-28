@@ -2,6 +2,7 @@ import React from "react";
 import { useGlobalContext } from "../context";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { GrMail } from "react-icons/gr";
 
 const InfoContact = () => {
   const { writeBilingualContent } = useGlobalContext();
@@ -34,7 +35,7 @@ const InfoContact = () => {
         href="mailto:matthieu_franck@orange.fr"
         className="contactSection-info-link"
       >
-        <FaGithub className="contactSection-info-link-icon" />
+        <GrMail className="contactSection-info-link-icon" />
         <h3 className="contactSection-info-link-title">
           {writeBilingualContent(
             "or send me an Email",
