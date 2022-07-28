@@ -11,7 +11,7 @@ const SharedLayout = () => {
       <Background />
       <header className="mainHeader">
         <Link to="/" className="logo">
-          MattFr
+          Matthieu Franck
         </Link>
         <Navbar />
         <div className="switchBtns">

@@ -62,6 +62,8 @@ const FormContact = () => {
     }
   };
 
+  // peut etre tout revoir en créant des fonctions pour les classnames comme pour moviefinder
+
   const checkEmail = () => {
     //eslint-disable-next-line
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -93,6 +95,7 @@ const FormContact = () => {
         onSubmit="submit"
         className="formContact"
       >
+        <h1>{writeBilingualContent("Contact", "Contactez-moi")}</h1>
         <input type="hidden" name="form-name" value="contact" />
         <label htmlFor="firstName"></label>
         <input
