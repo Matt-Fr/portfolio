@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context";
-import Projects from "./Projects";
+
 import "./Home.scss";
 
 const Home = () => {
-  const { language, setLanguage, writeBilingualContent } = useGlobalContext();
+  const { language, writeBilingualContent } = useGlobalContext();
   console.log(language);
   return (
     <section>

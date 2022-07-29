@@ -28,24 +28,26 @@ const FormContact = () => {
   };
 
   const showErrorMessages = () => {
-    if (!firstname) {
+    if (!checkFirstname()) {
       setErrorFirstame(true);
     } else {
       setErrorFirstame(false);
     }
 
-    if (!lastname) {
+    if (!checkLastname()) {
       setErrorLastname(true);
     } else {
       setErrorLastname(false);
     }
-    if (!email) {
+    if (!checkEmail()) {
       setErrorEmail(true);
     } else {
       setErrorEmail(false);
     }
-    if (!message) {
+    if (!checkMessage()) {
       setErrorMessage(true);
+    } else {
+      setErrorEmail(false);
     }
   };
 
@@ -75,6 +77,8 @@ const FormContact = () => {
   const checkMessage = () => {
     if (message.length >= 15) {
       return true;
+    } else {
+      return false;
     }
   };
 
