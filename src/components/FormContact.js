@@ -14,8 +14,6 @@ const FormContact = () => {
   const [errorEmail, setErrorEmail] = useState(false);
   const [errorMessage, setErrorMessage] = useState(false);
 
-  console.log(errorFirstname);
-
   const handleFirstname = (input) => {
     setFirstame(input.target.value);
   };

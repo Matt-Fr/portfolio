@@ -14,6 +14,30 @@
     display: flex;
     &-link {
       text-decoration: none;
+      position: relative;
+      margin: 1rem 1rem 1rem 0;
+      padding: 1rem;
+      color: var(--clr-font);
+      font-size: 1.5rem;
+      border-radius: 1rem;
+
+      &:hover {
+        color: var(--clr-primary);
+        background-color: var(--clr-font);
+        transition: 0.5s;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: var(--clr-font);
+        opacity: 8%;
+        border-radius: 1rem;
+        z-index: -1;
+      }
     }
   }
 }
