@@ -2,21 +2,30 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context";
 import Projects from "./Projects";
+import "./Home.scss";
 
 const Home = () => {
   const { language, setLanguage, writeBilingualContent } = useGlobalContext();
   console.log(language);
   return (
     <section>
-      <h1>
-        {writeBilingualContent(
-          "hey, my name is MattFR, check out my projects",
-          "hey je m'appelle matt, regarde mes projets"
-        )}
-      </h1>
-      <Link to="/projects">
-        {writeBilingualContent("View Projects", "Voir mes projets")}
-      </Link>
+      <div className="homeContainer">
+        <h1 className="homeContainer-name">Matthieu Franck</h1>
+        <h2 className="homeContainer-job">
+          {writeBilingualContent(
+            "I'm a Front-End Developer",
+            "Je suis développeur Front-End"
+          )}
+        </h2>
+        <div className="homeContainer-linkContainer">
+          <Link to="/projects" className="homeContainer-linkContainer-link">
+            {writeBilingualContent("View Projects", "Voir mes projets")}
+          </Link>
+          <Link to="/contact" className="homeContainer-linkContainer-link">
+            {writeBilingualContent("Contact me", "Me contacter")}
+          </Link>
+        </div>
+      </div>
     </section>
   );
 };
