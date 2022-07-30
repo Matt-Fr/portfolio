@@ -517,7 +517,7 @@ body {
 
     &-link {
       display: flex;
-      box-shadow: 2px 5px 15px 0px var(--clr-span1);
+      box-shadow: 2px 5px 10px 0px var(--clr-span1);
       position: relative;
       border-radius: 1rem;
       margin-bottom: 2rem;
@@ -529,6 +529,7 @@ body {
       &:hover {
         color: var(--clr-primary);
         background-color: var(--clr-font);
+        box-shadow: 2px 5px 20px 10px var(--clr-span1);
         transition: 0.5s;
       }
 
