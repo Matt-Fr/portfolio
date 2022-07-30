@@ -9,23 +9,24 @@ const Home = () => {
   console.log(language);
   return (
     <section>
-      <div className="homeContainer">
-        <h1 className="homeContainer-name">Matthieu Franck</h1>
-        <h2 className="homeContainer-job">
+      <div className="homeInfoContainer">
+        <h1 className="homeInfoContainer-name">Matthieu Franck</h1>
+        <h2 className="homeInfoContainer-job">
           {writeBilingualContent(
             "I'm a Front-End Developer",
             "Je suis développeur Front-End"
           )}
         </h2>
-        <div className="homeContainer-linkContainer">
-          <Link to="/projects" className="homeContainer-linkContainer-link">
+        <div className="homeInfoContainer-linkContainer">
+          <Link to="/projects" className="homeInfoContainer-linkContainer-link">
             {writeBilingualContent("View Projects", "Voir mes projets")}
           </Link>
-          <Link to="/contact" className="homeContainer-linkContainer-link">
+          <Link to="/contact" className="homeInfoContainer-linkContainer-link">
             {writeBilingualContent("Contact me", "Me contacter")}
           </Link>
         </div>
       </div>
+      <div className=""></div>
     </section>
   );
 };
