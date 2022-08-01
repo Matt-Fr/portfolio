@@ -4,6 +4,7 @@ import Background from "../components/Background";
 import LanguageBtn from "../components/LanguageBtn";
 import Navbar from "../components/Navbar";
 import ToggleTheme from "../components/ToggleTheme";
+import "./SharedLayout.scss";
 
 const SharedLayout = () => {
   return (

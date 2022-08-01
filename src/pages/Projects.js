@@ -2,6 +2,7 @@ import React from "react";
 import { useGlobalContext } from "../context";
 import data from "../data";
 import ModalProject from "../components/ModalProject";
+import "./Projects.scss";
 
 const Projects = () => {
   const { setDataModal, setOpenModal } = useGlobalContext();

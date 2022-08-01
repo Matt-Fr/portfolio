@@ -1,0 +1,81 @@
+.themeBtn {
+  font-family: inherit;
+  background-color: var(--clr-font);
+  border: 1px var(--clr-font) solid;
+  padding: 0.5rem;
+  color: var(--clr-bcg);
+  cursor: pointer;
+  font-size: inherit;
+  transition: 0.5s;
+}
+
+.mainHeader {
+  animation: up-to-down 800ms ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  border-bottom: 1px var(--clr-font) solid;
+  font-size: 1.2rem;
+}
+
+.switchBtns {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 20%;
+}
+
+.langBtns {
+  margin-right: 1rem;
+  &-btn {
+    font-size: inherit;
+    border: 1px solid var(--clr-font);
+    background: var(--clr-bcg);
+    color: var(--clr-font);
+    padding: 0.5rem;
+    cursor: pointer;
+    &-active {
+      background: var(--clr-font);
+      color: var(--clr-bcg);
+      transition: 0.2s;
+    }
+  }
+}
+
+.langBtns-btn:active {
+  color: grey;
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--clr-font);
+  width: 20%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  &-element {
+    color: var(--clr-font);
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem;
+  }
+}
+
+.navbar-element:hover {
+  background-color: var(--clr-font);
+  color: var(--clr-bcg);
+  -webkit-box-shadow: inset 0px 0px 0px 2px var(--clr-span1);
+  -moz-box-shadow: inset 0px 0px 0px 2px var(--clr-span1);
+  box-shadow: inset 0px 0px 0px 2px var(--clr-span1);
+  transition: 0.2s;
+}
+
+.active {
+  background-color: var(--clr-font);
+  color: var(--clr-bcg);
+}
