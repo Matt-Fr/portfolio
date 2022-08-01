@@ -1,6 +1,7 @@
 import React from "react";
 import { useGlobalContext } from "../context";
 import { AiOutlineCloseCircle } from "react-icons/ai";
+import "./ModalProjects.scss";
 
 const ModalProject = () => {
   const { writeBilingualContent, dataModal, openModal, setOpenModal } =
@@ -32,9 +33,6 @@ const ModalProject = () => {
           openModal ? "modalProject openModal" : "ModalProject closeModal"
         }
       >
-        <div
-          className={openModal ? "modalProject-bcg" : "ModalProject closeModal"}
-        ></div>
         <div
           className={
             openModal
