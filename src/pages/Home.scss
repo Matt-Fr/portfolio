@@ -1,6 +1,7 @@
 .homeSection {
   display: flex;
   justify-content: space-around;
+  margin: 2rem 0;
 }
 
 .homeInfoContainer {
@@ -70,11 +71,13 @@
   }
   &-title {
     font-size: 2.5rem;
+    margin: 2rem;
   }
 
   &-articlesContainer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     &-tech {
       display: flex;
       flex-direction: column;
@@ -90,5 +93,16 @@
         font-size: 1.7rem;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .homeSection {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .techContainer {
+    width: 100%;
+    margin-top: 2rem;
   }
 }
