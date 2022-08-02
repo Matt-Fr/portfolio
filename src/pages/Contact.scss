@@ -129,3 +129,24 @@
   box-shadow: 2px 5px 15px 0px var(--clr-span1);
   transition: 0.5s;
 }
+
+@media only screen and (max-width: 1000px) {
+  .contactSection {
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse;
+
+    &-info {
+      width: 100%;
+    }
+    .contact {
+      margin: 2rem 0;
+      width: 100%;
+      &-formContact {
+        width: 100%;
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+  }
+}
