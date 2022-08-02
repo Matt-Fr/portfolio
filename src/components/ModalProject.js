@@ -33,14 +33,6 @@ const ModalProject = () => {
           openModal ? "modalProject openModal" : "ModalProject closeModal"
         }
       >
-        <button
-          className="modalProject-closeBtn"
-          onClick={() => {
-            setOpenModal(false);
-          }}
-        >
-          <AiOutlineCloseCircle className="modalProject-closeBtn-icon"></AiOutlineCloseCircle>
-        </button>
         <div
           className={
             openModal
@@ -60,6 +52,14 @@ const ModalProject = () => {
             openModal ? "modalProject-info visible" : "modalProject-info"
           }
         >
+          <button
+            className="modalProject-closeBtn"
+            onClick={() => {
+              setOpenModal(false);
+            }}
+          >
+            <AiOutlineCloseCircle className="modalProject-closeBtn-icon"></AiOutlineCloseCircle>
+          </button>
           <div className=" modalProject-info-elements">
             <h1 className="modalProject-info-elements-title">{title}</h1>
 
