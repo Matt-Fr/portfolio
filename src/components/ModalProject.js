@@ -2,10 +2,19 @@ import React from "react";
 import { useGlobalContext } from "../context";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import "./ModalProjects.scss";
+import { useEffect } from "react";
 
 const ModalProject = () => {
   const { writeBilingualContent, dataModal, openModal, setOpenModal } =
     useGlobalContext();
+
+  useEffect(() => {
+    if (openModal === true) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [openModal]);
   const {
     title,
     descriptionEn,
@@ -65,9 +74,12 @@ const ModalProject = () => {
 
             <div className="modalProject-info-elements-tags">
               {tags &&
-                tags.map((tag) => {
+                tags.map((tag, index) => {
                   return (
-                    <span className="modalProject-info-elements-tags-tag">
+                    <span
+                      key={index}
+                      className="modalProject-info-elements-tags-tag"
+                    >
                       {tag}
                     </span>
                   );

@@ -3,18 +3,9 @@ import { useGlobalContext } from "../context";
 import data from "../data";
 import ModalProject from "../components/ModalProject";
 import "./Projects.scss";
-import { useEffect } from "react";
 
 const Projects = () => {
-  const { setDataModal, setOpenModal, openModal } = useGlobalContext();
-
-  useEffect(() => {
-    if (openModal === true) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-  }, [openModal]);
+  const { setDataModal, setOpenModal } = useGlobalContext();
 
   return (
     <>
