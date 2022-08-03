@@ -17,6 +17,7 @@
   padding: 2rem 0;
   border-bottom: 1px var(--clr-font) solid;
   font-size: 1.2rem;
+  //a enlever
 }
 
 .switchBtns {
@@ -78,4 +79,88 @@
 .active {
   background-color: var(--clr-font);
   color: var(--clr-bcg);
+}
+
+.hamburger {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  color: inherit;
+  display: none;
+  &-bar {
+  }
+}
+
+@media only screen and (max-width: 871px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    right: -100vw;
+    bottom: 0;
+    top: 0;
+    height: 100vh;
+    background-color: aquamarine;
+    z-index: 200;
+    transition: all 0.5s ease-in-out;
+
+    &-element {
+      padding: 1.5rem;
+    }
+  }
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 300;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .hamburger-bar,
+  .hamburger-bar::before,
+  .hamburger-bar::after {
+    display: block;
+    width: 40px;
+    height: 3px;
+    position: relative;
+    background: var(--clr-font);
+    border-radius: 3px;
+    z-index: 300;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .hamburger-bar::before,
+  .hamburger-bar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+
+  .show-nav {
+    width: 100vw;
+    right: 0;
+  }
+  .hamburger-bar::before {
+    transform: translateY(-12px);
+  }
+
+  .hamburger-bar::after {
+    transform: translateY(12px);
+  }
+  .show-nav .hamburger-bar {
+    background: transparent;
+    width: 0;
+  }
+
+  .show-nav .hamburger-bar::before {
+    transform: rotate(45deg);
+  }
+  .show-nav .hamburger-bar::after {
+    transform: rotate(-45deg);
+  }
 }
