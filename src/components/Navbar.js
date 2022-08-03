@@ -7,7 +7,7 @@ import ToggleTheme from "../components/ToggleTheme";
 const Navbar = () => {
   const { writeBilingualContent } = useGlobalContext();
   return (
-    <>
+    <header className="mainHeader">
       <Link to="/" className="logo">
         Matthieu Franck
       </Link>
@@ -26,7 +26,7 @@ const Navbar = () => {
         <LanguageBtn />
         <ToggleTheme />
       </div>
-    </>
+    </header>
   );
 };
 

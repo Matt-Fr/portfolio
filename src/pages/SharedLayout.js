@@ -8,9 +8,7 @@ const SharedLayout = () => {
   return (
     <>
       <Background />
-      <header className="mainHeader">
-        <Navbar />
-      </header>
+      <Navbar />
       <main>
         <Outlet />
       </main>
