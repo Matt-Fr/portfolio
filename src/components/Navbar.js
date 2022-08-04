@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useGlobalContext } from "../context";
 import LanguageBtn from "../components/LanguageBtn";
@@ -9,6 +9,13 @@ const Navbar = () => {
   const handleShowLinks = () => {
     setShowLinks(!showLinks);
   };
+  useEffect(() => {
+    if (showLinks === true) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [showLinks]);
   const { writeBilingualContent } = useGlobalContext();
   return (
     <header className="mainHeader">
@@ -37,7 +44,7 @@ const Navbar = () => {
           <span className="hamburger-bar"></span>
         </button>
       </nav>
-      <div className="switchBtns">
+      <div className={showLinks ? "switchBtns show-btns" : "switchBtns"}>
         <LanguageBtn />
         <ToggleTheme />
       </div>
