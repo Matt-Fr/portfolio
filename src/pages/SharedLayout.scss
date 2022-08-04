@@ -111,9 +111,20 @@
     bottom: 0;
     top: 0;
     height: 100vh;
-    background-color: aquamarine;
     z-index: 200;
     transition: all 0.5s ease-in-out;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: var(--clr-bcg);
+      opacity: 93%;
+
+      z-index: -1;
+    }
 
     &-element {
       padding: 1.5rem;
@@ -142,15 +153,20 @@
 
   .hamburger {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 1.8rem;
     right: 2rem;
     padding: 0;
+    z-index: 600;
 
     &:hover {
       cursor: pointer;
     }
   }
+  .hamburger-none {
+    display: none;
+  }
+
   .hamburger-bar,
   .hamburger-bar::before,
   .hamburger-bar::after {

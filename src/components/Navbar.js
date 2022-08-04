@@ -5,6 +5,7 @@ import LanguageBtn from "../components/LanguageBtn";
 import ToggleTheme from "../components/ToggleTheme";
 
 const Navbar = () => {
+  const { writeBilingualContent, closeHamburger } = useGlobalContext();
   const [showLinks, setShowLinks] = useState(false);
   const handleShowLinks = () => {
     setShowLinks(!showLinks);
@@ -16,7 +17,7 @@ const Navbar = () => {
       document.body.style.overflow = "auto";
     }
   }, [showLinks]);
-  const { writeBilingualContent } = useGlobalContext();
+
   return (
     <header className="mainHeader">
       <Link to="/" className="logo">
@@ -40,14 +41,17 @@ const Navbar = () => {
         >
           {writeBilingualContent("Contact", "Contact")}
         </NavLink>
-        <button className="hamburger" onClick={handleShowLinks}>
-          <span className="hamburger-bar"></span>
-        </button>
       </nav>
       <div className={showLinks ? "switchBtns show-btns" : "switchBtns"}>
         <LanguageBtn />
         <ToggleTheme />
       </div>
+      <button
+        className={closeHamburger ? "hamburger hamburger-none" : "hamburger"}
+        onClick={handleShowLinks}
+      >
+        <span className="hamburger-bar"></span>
+      </button>
     </header>
   );
 };

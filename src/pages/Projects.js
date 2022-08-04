@@ -5,7 +5,7 @@ import ModalProject from "../components/ModalProject";
 import "./Projects.scss";
 
 const Projects = () => {
-  const { setDataModal, setOpenModal } = useGlobalContext();
+  const { setDataModal, setOpenModal, setCloseHamburger } = useGlobalContext();
 
   return (
     <>
@@ -37,6 +37,7 @@ const Projects = () => {
                 });
 
                 setOpenModal(true);
+                setCloseHamburger(true);
               }}
               key={id}
               className="sectionProjects-article"

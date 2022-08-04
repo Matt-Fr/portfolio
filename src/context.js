@@ -19,6 +19,8 @@ const AppProvider = ({ children }) => {
 
   const [language, setLanguage] = useState("en");
 
+  const [closeHamburger, setCloseHamburger] = useState(false);
+
   const writeBilingualContent = (eng, fr) => {
     if (language === "en") {
       return eng;
@@ -35,6 +37,8 @@ const AppProvider = ({ children }) => {
         setDataModal,
         openModal,
         setOpenModal,
+        closeHamburger,
+        setCloseHamburger,
       }}
     >
       {children}
