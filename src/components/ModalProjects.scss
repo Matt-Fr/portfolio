@@ -24,6 +24,7 @@
   transform: translate(-50%, -50%);
 
   display: flex;
+  flex-direction: row-reverse;
   box-shadow: 5px 5px 15px 5px var(--clr-span1);
   color: var(--clr-font);
   &::before {
@@ -180,18 +181,14 @@
     min-height: 100%;
     transition: 0.7s ease-in-out;
     opacity: 1;
-    overflow-x: hidden;
   }
   .modalProject {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-columns: 1fr 1fr;
-    overflow-x: hidden;
-
+    flex-direction: column;
+    overflow: auto;
     background: var(--clr-bcg);
     opacity: 1;
     &::-webkit-scrollbar {
-      width: 4px; /* width of the entire scrollbar */
+      width: 8px; /* width of the entire scrollbar */
     }
     &::-webkit-scrollbar-track {
       background: var(--clr-bcgvar); /* color of the tracking area */
@@ -204,17 +201,9 @@
     &::before {
       content: none;
     }
-    &-closeBtn {
-      top: 0.3rem;
-      right: 0.5rem;
-    }
     &-info {
-      grid-row: 1 / 2;
-      grid-column: 1 / 2;
-
-      width: 100vw;
-      overflow: hidden;
-
+      width: 100%;
+      position: relative;
       padding: 0;
       &-elements {
         &-title {
@@ -235,9 +224,7 @@
       }
     }
     &-imgContainer {
-      grid-row: 2 / 3;
-      grid-column: 1 / 2;
-      width: 100vw;
+      width: 100%;
 
       &-img {
         border-radius: 0;

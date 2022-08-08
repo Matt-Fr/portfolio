@@ -49,20 +49,6 @@ const ModalProject = () => {
       >
         <div
           className={
-            openModal
-              ? "modalProject-imgContainer visible"
-              : "modalProject-imgContainer"
-          }
-        >
-          <img
-            src={picture}
-            alt={title}
-            className="modalProject-imgContainer-img"
-          />
-        </div>
-
-        <div
-          className={
             openModal ? "modalProject-info visible" : "modalProject-info"
           }
         >
@@ -113,6 +99,19 @@ const ModalProject = () => {
               </a>
             </div>
           </div>
+        </div>
+        <div
+          className={
+            openModal
+              ? "modalProject-imgContainer visible"
+              : "modalProject-imgContainer"
+          }
+        >
+          <img
+            src={picture}
+            alt={title}
+            className="modalProject-imgContainer-img"
+          />
         </div>
       </div>
     </>
