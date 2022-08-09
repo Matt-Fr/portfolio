@@ -29,6 +29,7 @@
   font-size: inherit;
   transition: 0.5s;
   border-radius: 1rem;
+  width: 6rem;
 }
 
 .langBtns {
@@ -52,7 +53,7 @@
     z-index: -1;
   }
   &-btn {
-    width: 3rem;
+    width: 2.5rem;
     height: 100%;
     font-size: inherit;
     border: 0;
@@ -86,6 +87,8 @@
   grid-column-end: 3;
 
   &-element {
+    text-align: center;
+    width: 5rem;
     position: relative;
     color: var(--clr-font);
     text-decoration: none;
@@ -165,6 +168,7 @@
 
     &-element {
       padding: 1.5rem;
+      margin: 1rem;
     }
   }
 
