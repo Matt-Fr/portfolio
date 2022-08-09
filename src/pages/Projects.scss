@@ -49,6 +49,7 @@
 @media only screen and (max-width: 600px) {
   .sectionProjects {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-gap: 1.5rem;
     &-article:hover {
       transform: scale(1);
     }
