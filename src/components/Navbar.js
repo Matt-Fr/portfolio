@@ -5,7 +5,7 @@ import LanguageBtn from "../components/LanguageBtn";
 import ToggleTheme from "../components/ToggleTheme";
 
 const Navbar = () => {
-  const { writeBilingualContent, closeHamburger } = useGlobalContext();
+  const { writeBilingualContent } = useGlobalContext();
   const [showLinks, setShowLinks] = useState(false);
   const handleShowLinks = () => {
     setShowLinks(!showLinks);

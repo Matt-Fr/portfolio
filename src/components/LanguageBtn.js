@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useGlobalContext } from "../context";
 
 const LanguageBtn = () => {
-  const { language, setLanguage, writeBilingualContent } = useGlobalContext();
+  const { setLanguage } = useGlobalContext();
   const [isEnActive, setIsEnActive] = useState(true);
 
   return (
