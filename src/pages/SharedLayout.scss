@@ -23,25 +23,41 @@
 .themeBtn {
   font-family: inherit;
   background-color: var(--clr-font);
-  border: 1px var(--clr-font) solid;
-
+  border: 3px var(--clr-span1) solid;
   color: var(--clr-bcg);
   cursor: pointer;
   font-size: inherit;
   transition: 0.5s;
+  border-radius: 1rem;
 }
 
 .langBtns {
+  position: relative;
   margin-right: 1rem;
   display: flex;
-  height: 100%;
+  border: 3px var(--clr-span1) solid;
+  border-radius: 1rem;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--clr-font);
+    border: none;
+    opacity: 30%;
+
+    z-index: -1;
+  }
   &-btn {
     width: 3rem;
     height: 100%;
     font-size: inherit;
-    border: 1px solid var(--clr-font);
-    background: var(--clr-bcg);
-    color: var(--clr-font);
+    border: 0;
+    background: transparent;
+    // color: var(--clr-font);
     padding: 0;
 
     cursor: pointer;
@@ -70,24 +86,46 @@
   grid-column-end: 3;
 
   &-element {
+    position: relative;
     color: var(--clr-font);
     text-decoration: none;
+    padding: 0.5rem;
     margin: 0 1.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: var(--clr-font);
+      opacity: 8%;
+
+      z-index: -1;
+    }
   }
 }
 
 .navbar-element:hover {
-  background-color: var(--clr-font);
-  color: var(--clr-bcg);
-  -webkit-box-shadow: inset 0px 0px 0px 2px var(--clr-span1);
-  -moz-box-shadow: inset 0px 0px 0px 2px var(--clr-span1);
-  box-shadow: inset 0px 0px 0px 2px var(--clr-span1);
+  -webkit-box-shadow: inset 0px 0px 0px 3px var(--clr-primary);
+  -moz-box-shadow: inset 0px 0px 0px 3px var(--clr-primary);
+  box-shadow: inset 0px 0px 0px 3px var(--clr-primary);
   transition: 0.2s;
+  &::before {
+    opacity: 20%;
+
+    z-index: -1;
+  }
 }
 
 .active {
   background-color: var(--clr-font);
   color: var(--clr-bcg);
+  -webkit-box-shadow: inset 0px 0px 0px 3px var(--clr-primary);
+  -moz-box-shadow: inset 0px 0px 0px 3px var(--clr-primary);
+  box-shadow: inset 0px 0px 0px 3px var(--clr-primary);
 }
 
 .hamburger {
@@ -134,7 +172,7 @@
 
   .switchBtns {
     font-size: 1.2rem;
-    width: 7rem;
+    width: 13rem;
     position: fixed;
     grid-column-start: unset;
     grid-column-end: unset;
