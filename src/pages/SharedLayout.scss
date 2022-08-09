@@ -1,6 +1,7 @@
 .mainHeader {
   animation: up-to-down 800ms ease-in-out;
   display: grid;
+  position: relative;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 2rem;
   align-items: center;
@@ -155,9 +156,9 @@
     display: block;
     position: absolute;
     top: 1.8rem;
-    right: 2rem;
+    right: 0;
     padding: 0;
-    z-index: 600;
+    z-index: 0;
 
     &:hover {
       cursor: pointer;

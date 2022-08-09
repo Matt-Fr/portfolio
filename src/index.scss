@@ -214,3 +214,9 @@ body {
   transform-origin: 5vw 1vh;
   box-shadow: -100vmin 0 12.776473440810161vmin currentColor;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0 1rem;
+  }
+}

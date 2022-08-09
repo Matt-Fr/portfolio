@@ -46,10 +46,7 @@ const Navbar = () => {
         <LanguageBtn />
         <ToggleTheme />
       </div>
-      <button
-        className={closeHamburger ? "hamburger hamburger-none" : "hamburger"}
-        onClick={handleShowLinks}
-      >
+      <button className="hamburger" onClick={handleShowLinks}>
         <span className="hamburger-bar"></span>
       </button>
     </header>

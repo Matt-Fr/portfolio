@@ -5,13 +5,8 @@ import "./ModalProjects.scss";
 import { useEffect } from "react";
 
 const ModalProject = () => {
-  const {
-    writeBilingualContent,
-    dataModal,
-    openModal,
-    setOpenModal,
-    setCloseHamburger,
-  } = useGlobalContext();
+  const { writeBilingualContent, dataModal, openModal, setOpenModal } =
+    useGlobalContext();
 
   useEffect(() => {
     if (openModal === true) {
@@ -56,7 +51,6 @@ const ModalProject = () => {
             className="modalProject-closeBtn"
             onClick={() => {
               setOpenModal(false);
-              setCloseHamburger(false);
             }}
           >
             <AiOutlineCloseCircle className="modalProject-closeBtn-icon"></AiOutlineCloseCircle>
