@@ -16,7 +16,7 @@ const data = [
     logo: logoKasa,
     picture: kasa,
     descriptionEn:
-      "I'm baby brunch migas YOLO twee pickled gluten-free. Hell of vape art party, tote bag poutine sartorial blue bottle hella la croix DIY microdosing ennui ramps. Vexillologist portland mlkshk keytar tousled. Flexitarian four dollar toast paleo yuccie tacos dreamcatcher thundercats microdosing hexagon wolf. Prism banh mi poutine, bicycle rights tonx air plant authentic vice farm-to-table deep v truffaut DSA mlkshk letterpress twee. Edison bulb cronut etsy before they sold out, roof party venmo twee palo santo.",
+      "The Kasa apartment rental application was my first project built with React and React Router. The principal skills utilized in this project are the creation of a web application using React as well as the creation of components and routes using React Router. The application enables the user to navigate between various rental properties. When selected, each rental listing contains a brief description of the property, image gallery, and user ratings.",
     descriptionFr:
       "Cette application de location de logements a été mon tout premier projet construit avec React et React Router. Parmi les compétences ciblées, il y a l’initialisation d’une application web avec React, la création de composants et des routes de l’application avec React Router. L’application permet de naviguer entre les différents logements. Ils possèdent tous leurs propres description, galerie d’images et notations. ",
     tags: ["React", "React Router", "Responsive", "SCSS"],
@@ -43,7 +43,7 @@ const data = [
     logo: logoLesPetitsPlats,
     picture: lesPetitsPlats,
     descriptionEn:
-      "I'm baby vexillologist stumptown swag, put a bird on it tote bag DIY meggings. Post-ironic lomo ethical etsy keffiyeh pitchfork wayfarers austin cold-pressed tofu blue bottle 8-bit helvetica butcher. Helvetica la croix austin air plant. Subway tile bespoke praxis dreamcatcher chia forage lyft humblebrag lumbersexual synth brunch la croix.",
+      "Les Petits Plats is a website developed using vanilla JavaScript which allows the user to enter multiple search criteria using pre-set filters and a search bar to search a database of 50 recipes. The principal skill showcased within this project is the development of an algorithm to display information based on the searched criteria.",
     descriptionFr:
       "Les Petits Plats est un site web développé en JavaScript vanilla permettant de rechercher des recettes de cuisines à l’aide de différents filtres ainsi que plusieurs barres de recherche. Parmi les compétences ciblées : développer un algorithme pour résoudre un problème, analyser un problème informatique.",
     tags: ["Vanilla JS", "HTML & CSS", "Responsive"],
@@ -56,7 +56,7 @@ const data = [
     logo: logoFisheye,
     picture: fisheye,
     descriptionEn:
-      "I'm baby vexillologist stumptown swag, put a bird on it tote bag DIY meggings. Post-ironic lomo ethical etsy keffiyeh pitchfork wayfarers austin cold-pressed tofu blue bottle 8-bit helvetica butcher. Helvetica la croix austin air plant. Subway tile bespoke praxis dreamcatcher chia forage lyft humblebrag lumbersexual synth brunch la croix.",
+      "The Fisheye application was my first website created from scratch using vanilla JavaScript through my OpenClassrooms course. The principal skills used in the creation of this website are: Develop a modular web application utilizing several design patterns, write JavaScript code so that is maintainable, manage the events of a site using JavaScript, and website accessibility. Building this site in JavaScript without access to a JavaScript library enabled me to learn the basics of the language and later, to fully understand and appreciate the advantages of a JavaScript framework.",
     descriptionFr:
       "L’application Fisheye a été mon tout premier site web réalisé ex nihilo en Javascript Vanilla avec Openclassrooms. Parmi les compétences ciblées : développer une application web modulaire avec des design patterns, écrire du code JavaScript maintenable, gérer les évènements d'un site avec JavaScript, assurer l'accessibilité d'un site web. Construire ce site en JavaScript sans aucune librairie m’a permis d’apprendre les bases du langage, et plus tard, d’apprécier les avantages d’un framework JS.",
     tags: ["Vanilla JS", "ESLint", "Responsive"],
