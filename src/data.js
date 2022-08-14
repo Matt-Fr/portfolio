@@ -31,8 +31,8 @@ const data = [
     descriptionEn:
       "I'm baby vexillologist stumptown swag, put a bird on it tote bag DIY meggings. Post-ironic lomo ethical etsy keffiyeh pitchfork wayfarers austin cold-pressed tofu blue bottle 8-bit helvetica butcher. Helvetica la croix austin air plant. Subway tile bespoke praxis dreamcatcher chia forage lyft humblebrag lumbersexual synth brunch la croix.",
     descriptionFr:
-      "Meggings bitters poutine reprehenderit chillwave bicycle rights. Leggings raw denim scenester, dreamcatcher vice ut cred freegan sed fixie aute wolf. Keffiyeh af hammock keytar edison bulb tilde, williamsburg lomo. Pork belly lo-fi roof party pop-up, aesthetic lomo tonx neutra PBR&B semiotics commodo laborum fugiat deep v four dollar toast. Shaman poutine ennui tbh, jianbing minim single-origin coffee williamsburg coloring book. Trust fund tumeric adaptogen stumptown you probably haven't heard of them 90's magna direct trade pitchfork skateboard pariatur letterpress fam gentrify.",
-    tags: ["React", "HTML & CSS", "Responsive"],
+      "J’ai pu m’entrainer, avec ce petit projet, à utiliser pour la première fois une API externe. Cette application, créée à l'aide de React et React Router, permet de rechercher un film à l'aide d'une barre de recherche. En cliquant sur un film, vous serez redirigé sur une page comportant plus d'informations sur ce dernier. Cette application a été réalisé grâce à l'API IMDb.",
+    tags: ["React", "React Router", "API IMDb"],
     demo: "https://mattfr-film-finder.netlify.app/",
     linkGithub: "https://github.com/Matt-Fr/film_finder",
   },
@@ -71,7 +71,7 @@ const data = [
     descriptionEn:
       "I'm baby vexillologist stumptown swag, put a bird on it tote bag DIY meggings. Post-ironic lomo ethical etsy keffiyeh pitchfork wayfarers austin cold-pressed tofu blue bottle 8-bit helvetica butcher. Helvetica la croix austin air plant. Subway tile bespoke praxis dreamcatcher chia forage lyft humblebrag lumbersexual synth brunch la croix.",
     descriptionFr:
-      "Les petits plats est l’un de mes premiers projets créées exclusivement en Html avec le préprocesseur SCSS. Le site a été construit avec l’approche « mobile first » et m’a permis de m’initier aux animations CSS. Parmi les compétences ciblées : Mettre en place une structure de navigation pour un site web ; Mettre en œuvre des effets CSS graphiques avancés ; Assurer la cohérence graphique d'un site web.",
+      "Les petits plats est l’un de mes premiers projets Openclassrooms créées exclusivement en Html avec le préprocesseur SCSS. Le site a été construit avec l’approche « mobile first » et m’a permis de m’initier aux animations CSS. Parmi les compétences ciblées : Mettre en place une structure de navigation pour un site web ; Mettre en œuvre des effets CSS graphiques avancés ; Assurer la cohérence graphique d'un site web.",
     tags: ["HTML & CSS", "Responsive"],
     demo: "https://mattfr-ohmyfood.netlify.app/",
     linkGithub: "https://github.com/Matt-Fr/Franckmatthieu_3_24082021",
