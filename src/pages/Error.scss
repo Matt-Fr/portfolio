@@ -1,0 +1,17 @@
+.errorSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &-title {
+    font-size: 3rem;
+  }
+  &-link {
+    text-decoration: none;
+    color: var(--clr-bcg);
+    background-color: var(--clr-font);
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+  }
+}
