@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <header className="mainHeader">
       <Link to="/" className="logo">
-        Matthieu Franck
+        MattFR
       </Link>
       <nav className={showLinks ? "navbar show-nav" : "navbar"}>
         <NavLink className="navbar-element" to="/" onClick={handleShowLinks}>
