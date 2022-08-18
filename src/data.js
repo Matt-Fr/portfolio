@@ -29,7 +29,7 @@ const data = [
     logo: logoFilmFinder,
     picture: movieFinder,
     descriptionEn:
-      "In creating the FilmFinder project, I learned how to create an external API. This application, created using React and React Router, allows the user to search a film through the use of a search bar. When a film name is selected, the user is directed to a page which includes a short description of the film, and the film rating. The IMDB API was used in order to pull film rating information for display in the application.",
+      "In creating the FilmFinder project, I learned how to use an external API. This application, created using React and React Router, allows the user to search a film through the use of a search bar. When a film name is selected, the user is directed to a page which includes a short description of the film, and the film rating. The IMDB API was used in order to pull film rating information for display in the application.",
     descriptionFr:
       "J’ai pu m’entrainer, avec ce petit projet, à utiliser pour la première fois une API externe. Cette application, créée à l'aide de React et React Router, permet de rechercher un film à l'aide d'une barre de recherche. En cliquant sur un film, vous serez redirigé sur une page comportant plus d'informations sur ce dernier. Cette application a été réalisé grâce à l'API IMDb.",
     tags: ["React", "React Router", "API IMDb"],
