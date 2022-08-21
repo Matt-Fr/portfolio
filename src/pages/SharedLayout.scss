@@ -199,7 +199,7 @@
     top: 1.8rem;
     right: 0;
     padding: 0;
-    z-index: 0;
+    z-index: 1000;
 
     &:hover {
       cursor: pointer;
@@ -240,15 +240,15 @@
   .hamburger-bar::after {
     transform: translateY(12px);
   }
-  .show-nav .hamburger-bar {
+  .hamburger-anim .hamburger-bar {
     background: transparent;
     width: 0;
   }
 
-  .show-nav .hamburger-bar::before {
+  .hamburger-anim .hamburger-bar::before {
     transform: rotate(45deg);
   }
-  .show-nav .hamburger-bar::after {
+  .hamburger-anim .hamburger-bar::after {
     transform: rotate(-45deg);
   }
 }

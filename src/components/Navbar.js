@@ -46,7 +46,10 @@ const Navbar = () => {
         <LanguageBtn />
         <ToggleTheme />
       </div>
-      <button className="hamburger" onClick={handleShowLinks}>
+      <button
+        className={showLinks ? "hamburger hamburger-anim" : "hamburger"}
+        onClick={handleShowLinks}
+      >
         <span className="hamburger-bar"></span>
       </button>
     </header>
