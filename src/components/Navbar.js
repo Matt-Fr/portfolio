@@ -5,11 +5,12 @@ import LanguageBtn from "../components/LanguageBtn";
 import ToggleTheme from "../components/ToggleTheme";
 
 const Navbar = () => {
-  const { writeBilingualContent } = useGlobalContext();
+  const { writeBilingualContent, openModal } = useGlobalContext();
   const [showLinks, setShowLinks] = useState(false);
   const handleShowLinks = () => {
     setShowLinks(!showLinks);
   };
+
   useEffect(() => {
     if (showLinks === true) {
       document.body.style.overflow = "hidden";
@@ -46,12 +47,16 @@ const Navbar = () => {
         <LanguageBtn />
         <ToggleTheme />
       </div>
-      <button
-        className={showLinks ? "hamburger hamburger-anim" : "hamburger"}
-        onClick={handleShowLinks}
-      >
-        <span className="hamburger-bar"></span>
-      </button>
+      {openModal ? (
+        ""
+      ) : (
+        <button
+          className={showLinks ? "hamburger hamburger-anim" : "hamburger"}
+          onClick={handleShowLinks}
+        >
+          <span className="hamburger-bar"></span>
+        </button>
+      )}
     </header>
   );
 };
