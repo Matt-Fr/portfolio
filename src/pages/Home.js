@@ -34,7 +34,7 @@ const Home = () => {
       </div>
       <div className="techContainer">
         <h2 className="techContainer-title">
-          {writeBilingualContent("Tech I use", "Mes outils")}
+          {writeBilingualContent("Technical skills", "Mes outils")}
         </h2>
         <div className="techContainer-articlesContainer">
           <article className="techContainer-articlesContainer-tech">
