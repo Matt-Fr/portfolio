@@ -7,6 +7,8 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaSass } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
+import { SiJest } from "react-icons/si";
+import pdf from "../assets/CV-Matthieu-Franck.pdf";
 
 import "./Home.scss";
 
@@ -30,6 +32,14 @@ const Home = () => {
           <Link to="/contact" className="homeInfoContainer-linkContainer-link">
             {writeBilingualContent("Contact me", "Me contacter")}
           </Link>
+          <a
+            href={pdf}
+            target="_blank"
+            className="homeInfoContainer-linkContainer-link downloadCv"
+            rel="noopener noreferrer"
+          >
+            {writeBilingualContent("Download resume", "Télécharger CV")}
+          </a>
         </div>
       </div>
       <div className="techContainer">
@@ -66,6 +76,10 @@ const Home = () => {
           <article className="techContainer-articlesContainer-tech">
             <FaCss3 className="techContainer-articlesContainer-tech-icon" />
             <h3 className="techContainer-articlesContainer-tech-title">CSS3</h3>
+          </article>
+          <article className="techContainer-articlesContainer-tech">
+            <SiJest className="techContainer-articlesContainer-tech-icon" />
+            <h3 className="techContainer-articlesContainer-tech-title">Jest</h3>
           </article>
         </div>
       </div>
