@@ -8,6 +8,7 @@ import { FaSass } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiJest } from "react-icons/si";
+import { SiRedux } from "react-icons/si";
 import pdf from "../assets/CV-Matthieu-Franck.pdf";
 
 import "./Home.scss";
@@ -51,6 +52,12 @@ const Home = () => {
             <FaReact className="techContainer-articlesContainer-tech-icon" />
             <h3 className="techContainer-articlesContainer-tech-title">
               React
+            </h3>
+          </article>
+          <article className="techContainer-articlesContainer-tech">
+            <SiRedux className="techContainer-articlesContainer-tech-icon" />
+            <h3 className="techContainer-articlesContainer-tech-title">
+              Redux
             </h3>
           </article>
           <article className="techContainer-articlesContainer-tech">
