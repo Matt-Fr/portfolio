@@ -20,9 +20,9 @@ const data = [
     logo: logoArgentBank,
     picture: argentBank,
     descriptionEn:
-      "The Sportsee application is a dashboard which uses data (calories burned, length of workout, etc.) from an external API to create data visualizations of the athletic performances of two individuals. The graphs were created using the Recharts library and the state management using a context hook. The welcome interface contains four buttons for the two individuals: two buttons bring the user to the data visualizations based on the external API, and two buttons also display data visualizations for the same two individuals but this time pulling mock data. The application is not designed for tablet or mobile use (1024 pixels or higher).",
+      "Please note : The backend of the application must be installed before using this project. Please follow the installation instructions on the project's Github page. The ArgentBank application allows for authentication to a bank's service and interaction with its API. Redux Toolkit is used for state management and axios for API calls.",
     descriptionFr:
-      "L’application Sportsee est un Dashboard utilisant les données d’une API externe et permettant de visualiser les performances sportives des utilisateurs. Les graphs ont été réalisés grâce à la librairie Recharts et le state management grâce à un context. L’interface de l’accueil nous renvoie vers les données de deux utilisateurs (soit venant des données de l’API, soit des données mockées). L’application n’est pas conçue pour tablette et mobile (1024 pixels et plus).",
+      "!!important!! Il faut installer le backend de l’application avant de pouvoir utiliser ce projet, suivez les instructions sur la page Github du projet. L’application d'ArgentBank permet de s’authentifier au service d’une banque et d’interagir avec l’API de celle-ci. J’ai utilisé Redux Toolkit pour la gestion du state ainsi qu’axios pour les appels API.",
     tags: ["React", "Redux Toolkit", "axios", "Swagger"],
     linkGithub: "https://github.com/Matt-Fr/franck_matthieu_13_21092022",
   },
