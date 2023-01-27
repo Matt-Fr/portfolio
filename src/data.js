@@ -10,10 +10,24 @@ import ohmyfood from "./assets/ohmyfood.jpg";
 import logoOhmyfood from "./assets/logoOhmyfood.svg";
 import logoSportsee from "./assets/logoSportsee.svg";
 import sportsee from "./assets/sportsee.jpg";
+import logoArgentBank from "./assets/logoArgentBank.svg";
+import argentBank from "./assets/argentBank.jpg";
 
 const data = [
   {
-    id: 1,
+    id: 7,
+    title: "Argent Bank",
+    logo: logoArgentBank,
+    picture: argentBank,
+    descriptionEn:
+      "The Sportsee application is a dashboard which uses data (calories burned, length of workout, etc.) from an external API to create data visualizations of the athletic performances of two individuals. The graphs were created using the Recharts library and the state management using a context hook. The welcome interface contains four buttons for the two individuals: two buttons bring the user to the data visualizations based on the external API, and two buttons also display data visualizations for the same two individuals but this time pulling mock data. The application is not designed for tablet or mobile use (1024 pixels or higher).",
+    descriptionFr:
+      "L’application Sportsee est un Dashboard utilisant les données d’une API externe et permettant de visualiser les performances sportives des utilisateurs. Les graphs ont été réalisés grâce à la librairie Recharts et le state management grâce à un context. L’interface de l’accueil nous renvoie vers les données de deux utilisateurs (soit venant des données de l’API, soit des données mockées). L’application n’est pas conçue pour tablette et mobile (1024 pixels et plus).",
+    tags: ["React", "Redux Toolkit", "axios", "Swagger"],
+    linkGithub: "https://github.com/Matt-Fr/franck_matthieu_13_21092022",
+  },
+  {
+    id: 6,
     title: "SportSee",
     logo: logoSportsee,
     picture: sportsee,
@@ -26,7 +40,7 @@ const data = [
     linkGithub: "https://github.com/Matt-Fr/Franck_Matthieu_12_17052022",
   },
   {
-    id: 1,
+    id: 5,
     title: "Kasa",
     logo: logoKasa,
     picture: kasa,
@@ -39,7 +53,7 @@ const data = [
     linkGithub: "https://github.com/Matt-Fr/Franck_Matthieu_11_26042022",
   },
   {
-    id: 2,
+    id: 4,
     title: "FilmFinder",
     logo: logoFilmFinder,
     picture: movieFinder,
@@ -53,7 +67,7 @@ const data = [
   },
 
   {
-    id: 4,
+    id: 3,
     title: "Les Petits Plats",
     logo: logoLesPetitsPlats,
     picture: lesPetitsPlats,
@@ -66,7 +80,7 @@ const data = [
     linkGithub: "https://github.com/Matt-Fr/FranckMatthieu_7_03012022",
   },
   {
-    id: 3,
+    id: 2,
     title: "Fisheye",
     logo: logoFisheye,
     picture: fisheye,
@@ -79,7 +93,7 @@ const data = [
     linkGithub: "https://github.com/Matt-Fr/FranckMatthieu_6_28102021",
   },
   {
-    id: 5,
+    id: 1,
     title: "OhMyFood",
     logo: logoOhmyfood,
     picture: ohmyfood,

@@ -75,14 +75,16 @@ const ModalProject = () => {
               {writeBilingualContent(descriptionEn, descriptionFr)}
             </p>
             <div className="modalProject-info-elements-links">
-              <a
-                className="modalProject-info-elements-links-link"
-                href={demo}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Demo
-              </a>
+              {demo ? (
+                <a
+                  className="modalProject-info-elements-links-link"
+                  href={demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Demo
+                </a>
+              ) : null}
               <a
                 className="modalProject-info-elements-links-link"
                 href={linkGithub}
