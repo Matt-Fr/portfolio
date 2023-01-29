@@ -18,6 +18,7 @@
   }
   &-linkContainer {
     display: flex;
+    flex-wrap: wrap;
     &-link {
       box-shadow: 2px 5px 10px 0px var(--clr-span1);
       text-decoration: none;
