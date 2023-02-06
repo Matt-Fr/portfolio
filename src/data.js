@@ -24,7 +24,7 @@ const data = [
     descriptionEn:
       "You are currently viewing my portfolio, which I created using React and React Router. I also utilized 'useContext' to effectively manage the application's state. I chose not to use any additional libraries in order to keep things simple. The application is also responsive, multilingual (English, French) and has a light/dark mode.",
     descriptionFr:
-      "Vous êtes en train de regarder mon portfolio, que j'ai créé en utilisant React et React Router. J'ai également utilisé 'useContext' pour gérer l'état de l'application. Je n'ai pas utilisé d'autres librairies afin de garder une certaine simplicité. L’application est responsive, multilingue (anglais, français) et possède un mode claire/sombre.",
+      "Vous êtes en train de regarder mon portfolio, que j'ai créé en utilisant React et React Router. J'ai également utilisé 'useContext' pour gérer l'état de l'application. Je n'ai pas utilisé d'autres librairies afin de garder une certaine simplicité. L’application est responsive, multilingue (anglais, français) et possède un mode clair/sombre.",
     tags: ["React", "React Router", "useContext"],
     linkGithub: "https://github.com/Matt-Fr/portfolio",
   },
