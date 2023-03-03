@@ -71,7 +71,7 @@ const FormContact = () => {
         name="contact"
         method="post"
         data-netlify="true"
-        onSubmit={handleFormSubmit}
+        onSubmit={handleFormSubmit && "submit"}
         className="formContact"
       >
         <h1 className="formContact-title">
