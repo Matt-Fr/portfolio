@@ -1,91 +1,68 @@
-import React from "react";
-
-import { useState } from "react";
+import React, { useState } from "react";
 import { useGlobalContext } from "../context";
 
 const FormContact = () => {
   const { writeBilingualContent } = useGlobalContext();
-  const [firstname, setFirstame] = useState("");
-  const [lastname, setLastname] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [errorFirstname, setErrorFirstame] = useState(false);
-  const [errorLastname, setErrorLastname] = useState(false);
-  const [errorEmail, setErrorEmail] = useState(false);
-  const [errorMessage, setErrorMessage] = useState(false);
+  const [inputs, setInputs] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    message: "",
+  });
+  const [errors, setErrors] = useState({
+    firstname: false,
+    lastname: false,
+    email: false,
+    message: false,
+  });
 
-  const handleFirstname = (input) => {
-    setFirstame(input.target.value);
-  };
-  const handleLastname = (input) => {
-    setLastname(input.target.value);
-  };
-  const handleEmail = (input) => {
-    setEmail(input.target.value);
-  };
-  const handleMessage = (input) => {
-    setMessage(input.target.value);
+  const handleInputChange = (event) => {
+    setInputs((prevState) => ({
+      ...prevState,
+      [event.target.name]: event.target.value,
+    }));
   };
 
   const showErrorMessages = () => {
-    if (!checkFirstname()) {
-      setErrorFirstame(true);
-    } else {
-      setErrorFirstame(false);
-    }
-
-    if (!checkLastname()) {
-      setErrorLastname(true);
-    } else {
-      setErrorLastname(false);
-    }
-    if (!checkEmail()) {
-      setErrorEmail(true);
-    } else {
-      setErrorEmail(false);
-    }
-    if (!checkMessage()) {
-      setErrorMessage(true);
-    } else {
-      setErrorEmail(false);
-    }
+    const newErrors = {
+      firstname: !checkFirstname(),
+      lastname: !checkLastname(),
+      email: !checkEmail(),
+      message: !checkMessage(),
+    };
+    setErrors(newErrors);
   };
 
   const checkFirstname = () => {
-    if (firstname.length >= 2) {
-      return true;
-    }
-  };
-  const checkLastname = () => {
-    if (lastname.length >= 2) {
-      return true;
-    }
+    return inputs.firstname.length >= 2;
   };
 
-  // peut etre tout revoir en créant des fonctions pour les classnames comme pour moviefinder
+  const checkLastname = () => {
+    return inputs.lastname.length >= 2;
+  };
 
   const checkEmail = () => {
-    //eslint-disable-next-line
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if (email.match(regexEmail)) {
-      return true;
-    } else {
-      return false;
-    }
+    return inputs.email.match(regexEmail) !== null;
   };
 
   const checkMessage = () => {
-    if (message.length >= 15) {
-      return true;
-    } else {
-      return false;
-    }
+    return inputs.message.length >= 15;
   };
 
   const checkAll = () => {
-    if (checkFirstname() && checkLastname() && checkEmail() && checkMessage())
-      return true;
-    else return false;
+    return (
+      checkFirstname() && checkLastname() && checkEmail() && checkMessage()
+    );
+  };
+
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    showErrorMessages();
+    if (checkAll()) {
+      // handle form submission
+      console.log("Form submitted");
+    }
   };
 
   return (
@@ -94,7 +71,7 @@ const FormContact = () => {
         name="contact"
         method="post"
         data-netlify="true"
-        onSubmit="submit"
+        onSubmit={handleFormSubmit}
         className="formContact"
       >
         <h1 className="formContact-title">
@@ -104,16 +81,17 @@ const FormContact = () => {
         <label htmlFor="firstName"></label>
         <input
           className={
-            errorFirstname
+            errors.firstname
               ? "formContact-input formContact-input-error"
               : "formContact-input"
           }
           type="text"
           name="firstname"
-          onChange={handleFirstname}
+          onChange={handleInputChange}
+          value={inputs.firstname}
           placeholder={writeBilingualContent("First name", "Prénom")}
         />
-        {errorFirstname ? (
+        {errors.firstname ? (
           <span className="formContact-errorMsg">
             {writeBilingualContent(
               "Please write your first name",
@@ -128,15 +106,16 @@ const FormContact = () => {
         <input
           type="text"
           name="lastname"
-          onChange={handleLastname}
+          onChange={handleInputChange}
+          value={inputs.lastname}
           placeholder={writeBilingualContent("Last name", "Nom")}
           className={
-            errorLastname
+            errors.lastname
               ? "formContact-input formContact-input-error"
               : "formContact-input"
           }
         />
-        {errorLastname ? (
+        {errors.lastname ? (
           <span className="formContact-errorMsg">
             {writeBilingualContent(
               "Please write your last name",
@@ -160,15 +139,16 @@ const FormContact = () => {
         <input
           type="email"
           name="email"
-          onChange={handleEmail}
+          onChange={handleInputChange}
+          value={inputs.email}
           className={
-            errorEmail
+            errors.email
               ? "formContact-input formContact-input-error"
               : "formContact-input"
           }
           placeholder="Email"
         />
-        {errorEmail ? (
+        {errors.email ? (
           <span className="formContact-errorMsg">
             {writeBilingualContent(
               "Write a valid Email address",
@@ -182,14 +162,15 @@ const FormContact = () => {
         <textarea
           name="message"
           placeholder="Message"
-          onChange={handleMessage}
+          onChange={handleInputChange}
+          value={inputs.message}
           className={
-            errorMessage
+            errors.message
               ? "formContact-input formContact-input-error"
               : "formContact-input"
           }
         ></textarea>
-        {errorMessage ? (
+        {errors.message ? (
           <span className="formContact-errorMsg">
             {writeBilingualContent(
               "Must be at least 15 characters",
