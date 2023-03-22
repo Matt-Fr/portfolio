@@ -10,6 +10,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { SiJest } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
 import pdf from "../assets/CV-Matthieu-Franck.pdf";
+import { SiNextdotjs, SiTypescript } from "react-icons/si";
 
 import "./Home.scss";
 
@@ -58,6 +59,18 @@ const Home = () => {
           {writeBilingualContent("Technical skills", "Mes outils")}
         </h2>
         <div className="techContainer-articlesContainer">
+          <article className="techContainer-articlesContainer-tech">
+            <SiNextdotjs className="techContainer-articlesContainer-tech-icon" />
+            <h3 className="techContainer-articlesContainer-tech-title">
+              Next.js
+            </h3>
+          </article>
+          <article className="techContainer-articlesContainer-tech">
+            <SiTypescript className="techContainer-articlesContainer-tech-icon" />
+            <h3 className="techContainer-articlesContainer-tech-title">
+              Typescript
+            </h3>
+          </article>
           <article className="techContainer-articlesContainer-tech">
             <FaReact className="techContainer-articlesContainer-tech-icon" />
             <h3 className="techContainer-articlesContainer-tech-title">
