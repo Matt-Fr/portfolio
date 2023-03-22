@@ -16,6 +16,10 @@
     margin: 0;
     font-size: 2rem;
   }
+  &-description {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
   &-linkContainer {
     display: flex;
     flex-wrap: wrap;
@@ -105,5 +109,11 @@
   .techContainer {
     width: 100%;
     margin-top: 2rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .homeInfoContainer-description {
+    max-width: 36rem;
+    font-size: 1.5rem;
   }
 }

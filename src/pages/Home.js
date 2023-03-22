@@ -42,6 +42,16 @@ const Home = () => {
             {writeBilingualContent("Download resume", "Télécharger CV")}
           </a>
         </div>
+        <p className="homeInfoContainer-description">
+          Après avoir travaillé dans le secteur du tourisme, j'ai décidé de me
+          reconvertir dans le développement web. J'ai suivi une formation pour
+          devenir développeur Front-End, et j'ai découvert ma passion pour
+          React. Toujours en quête de nouvelles connaissances, j'apprends
+          actuellement les technologies de demain telles que Next.js et
+          TypeScript. Je suis particulièrement intéressé par la recherche d'une
+          équipe composée de personnes aux talents variés, avec qui je pourrais
+          continuer à apprendre et à développer mes compétences.
+        </p>
       </div>
       <div className="techContainer">
         <h2 className="techContainer-title">
