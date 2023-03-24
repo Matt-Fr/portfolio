@@ -7,6 +7,7 @@ import ToggleTheme from "../components/ToggleTheme";
 const Navbar = () => {
   const { writeBilingualContent, openModal } = useGlobalContext();
   const [showLinks, setShowLinks] = useState(false);
+  // l'erreur est ici
   const handleShowLinks = () => {
     setShowLinks(!showLinks);
   };
@@ -25,18 +26,22 @@ const Navbar = () => {
         MattFR
       </Link>
       <nav className={showLinks ? "navbar show-nav" : "navbar"}>
-        <NavLink className="navbar-element" to="/" onClick={handleShowLinks}>
+        <NavLink
+          className="navbar-element"
+          to="/"
+          onClick={() => setShowLinks(false)}
+        >
           {writeBilingualContent("Home", "Accueil")}
         </NavLink>
         <NavLink
           className="navbar-element"
           to="projects"
-          onClick={handleShowLinks}
+          onClick={() => setShowLinks(false)}
         >
           {writeBilingualContent("Projects", "Projets")}
         </NavLink>
         <NavLink
-          onClick={handleShowLinks}
+          onClick={() => setShowLinks(false)}
           className="navbar-element"
           to="contact"
         >
