@@ -7,7 +7,6 @@ import ToggleTheme from "../components/ToggleTheme";
 const Navbar = () => {
   const { writeBilingualContent, openModal } = useGlobalContext();
   const [showLinks, setShowLinks] = useState(false);
-  // l'erreur est ici
   const handleShowLinks = () => {
     setShowLinks(!showLinks);
   };
