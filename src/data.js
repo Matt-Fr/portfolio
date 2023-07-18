@@ -29,6 +29,19 @@ const data = [
     linkGithub: "https://github.com/Matt-Fr/portfolio",
   },
   {
+    id: 5,
+    title: "Kasa",
+    logo: logoKasa,
+    picture: kasa,
+    descriptionEn:
+      "The Kasa apartment rental application was my first project built with React and React Router. I then upgraded the project with next.js, typescript and tailwindcss. The application enables the user to navigate between various rental properties. When selected, each rental listing contains a brief description of the property, image gallery, and user ratings.",
+    descriptionFr:
+      "L'application de location d'appartements Kasa a été mon tout premier projet réalisé avec React et React Router. J'ai ensuite effectué une mise à niveau du projet en y ajoutant Next.js, TypeScript et Tailwind CSS. Cette application permet à l'utilisateur de naviguer facilement entre différentes propriétés à louer. Lorsqu'une propriété est sélectionnée, chaque annonce affiche une brève description de la propriété, une galerie d'images et les évaluations des utilisateurs.",
+    tags: ["Typescript", "Next.js", "Tailwind CSS", "Responsive"],
+    demo: "https://kasa-matt-fr.vercel.app/",
+    linkGithub: "https://github.com/Matt-Fr/Franck_Matthieu_11_26042022",
+  },
+  {
     id: 7,
     title: "Argent Bank",
     logo: logoArgentBank,
@@ -53,19 +66,7 @@ const data = [
     demo: "https://mattfr-sportsee.netlify.app/",
     linkGithub: "https://github.com/Matt-Fr/Franck_Matthieu_12_17052022",
   },
-  {
-    id: 5,
-    title: "Kasa",
-    logo: logoKasa,
-    picture: kasa,
-    descriptionEn:
-      "The Kasa apartment rental application was my first project built with React and React Router. The principal skills utilized in this project are the creation of a web application using React as well as the creation of components and routes using React Router. The application enables the user to navigate between various rental properties. When selected, each rental listing contains a brief description of the property, image gallery, and user ratings.",
-    descriptionFr:
-      "Cette application de location de logements a été mon tout premier projet construit avec React et React Router. Parmi les compétences ciblées, il y a l’initialisation d’une application web avec React, la création de composants et des routes de l’application avec React Router. L’application permet de naviguer entre les différents logements. Ils possèdent tous leurs propres description, galerie d’images et notations. ",
-    tags: ["React", "React Router", "Responsive", "SCSS"],
-    demo: "https://mattfr-kasa.netlify.app/",
-    linkGithub: "https://github.com/Matt-Fr/Franck_Matthieu_11_26042022",
-  },
+
   {
     id: 4,
     title: "FilmFinder",
