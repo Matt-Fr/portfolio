@@ -7,6 +7,8 @@
 }
 
 .homeInfoContainer {
+  grid-column-start: 1;
+  grid-column-end: 2;
   display: flex;
   flex-direction: column;
 
@@ -62,7 +64,8 @@
   box-shadow: 2px 5px 15px 0px var(--clr-span1);
   border-radius: 1rem;
   overflow: hidden;
-  grid-column: span 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
 
   &::before {
     content: "";
@@ -108,6 +111,8 @@
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
+  grid-column-start: 2;
+  grid-column-end: 3;
 
   &-img {
     width: 100%;
@@ -120,6 +125,14 @@
   .homeSection {
     flex-direction: column;
     justify-content: space-around;
+    grid-template-rows: auto auto auto; /* Two rows */
+    grid-template-columns: auto;
+  }
+  .photoContainer {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 
   .techContainer {
