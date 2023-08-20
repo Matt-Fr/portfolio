@@ -11,6 +11,7 @@ import { SiJest } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
 import pdf from "../assets/CV-Matthieu-Franck.pdf";
 import { SiNextdotjs, SiTypescript } from "react-icons/si";
+import { default as AuthorPic } from "../assets/meupdatedb&w.jpg";
 
 import "./Home.scss";
 
@@ -50,11 +51,14 @@ const Home = () => {
           )}
         </p>
       </div>
+      <div className="photoContainer">
+        <img src={AuthorPic} alt="author" className="photoContainer-img" />
+      </div>
       <div className="techContainer">
         <h2 className="techContainer-title">
           {writeBilingualContent("Technical skills", "Mes outils")}
         </h2>
-        <div className="techContainer-articlesContainer">
+        {/* <div className="techContainer-articlesContainer">
           <article className="techContainer-articlesContainer-tech">
             <SiNextdotjs className="techContainer-articlesContainer-tech-icon" />
             <h3 className="techContainer-articlesContainer-tech-title">
@@ -107,7 +111,7 @@ const Home = () => {
             <SiJest className="techContainer-articlesContainer-tech-icon" />
             <h3 className="techContainer-articlesContainer-tech-title">Jest</h3>
           </article>
-        </div>
+        </div> */}
       </div>
     </section>
   );
