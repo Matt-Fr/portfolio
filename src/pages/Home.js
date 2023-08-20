@@ -58,7 +58,7 @@ const Home = () => {
         <h2 className="techContainer-title">
           {writeBilingualContent("Technical skills", "Mes outils")}
         </h2>
-        {/* <div className="techContainer-articlesContainer">
+        <div className="techContainer-articlesContainer">
           <article className="techContainer-articlesContainer-tech">
             <SiNextdotjs className="techContainer-articlesContainer-tech-icon" />
             <h3 className="techContainer-articlesContainer-tech-title">
@@ -111,7 +111,7 @@ const Home = () => {
             <SiJest className="techContainer-articlesContainer-tech-icon" />
             <h3 className="techContainer-articlesContainer-tech-title">Jest</h3>
           </article>
-        </div> */}
+        </div>
       </div>
     </section>
   );

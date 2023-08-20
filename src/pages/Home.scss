@@ -1,7 +1,9 @@
 .homeSection {
-  display: flex;
-  justify-content: space-around;
-  margin: 2rem 0;
+  display: grid;
+  grid-template-rows: auto auto; /* Two rows */
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .homeInfoContainer {
@@ -60,7 +62,7 @@
   box-shadow: 2px 5px 15px 0px var(--clr-span1);
   border-radius: 1rem;
   overflow: hidden;
-  width: 45%;
+  grid-column: span 2;
 
   &::before {
     content: "";
@@ -119,6 +121,7 @@
     flex-direction: column;
     justify-content: space-around;
   }
+
   .techContainer {
     width: 100%;
     margin-top: 2rem;
