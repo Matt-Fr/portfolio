@@ -148,3 +148,27 @@
     font-size: 1.5rem;
   }
 }
+@media only screen and (max-width: 768px) {
+  .homeInfoContainer-name {
+    font-size: 2rem;
+  }
+  .homeInfoContainer-job {
+    font-size: 1.5rem;
+  }
+  .homeInfoContainer-linkContainer-link {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0.3rem 0.3rem 0.3rem 0;
+  }
+  .homeInfoContainer-description {
+    font-size: 1rem;
+  }
+  .photoContainer {
+    width: 10rem;
+    height: 10rem;
+  }
+  .techContainer-title {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+}
