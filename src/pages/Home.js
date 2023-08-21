@@ -7,7 +7,6 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaSass } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiJest } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
 import pdf from "../assets/CV-Matthieu-Franck.pdf";
 import { SiNextdotjs, SiTypescript } from "react-icons/si";
@@ -78,12 +77,6 @@ const Home = () => {
             </h3>
           </article>
           <article className="techContainer-articlesContainer-tech">
-            <SiRedux className="techContainer-articlesContainer-tech-icon" />
-            <h3 className="techContainer-articlesContainer-tech-title">
-              Redux
-            </h3>
-          </article>
-          <article className="techContainer-articlesContainer-tech">
             <IoLogoJavascript className="techContainer-articlesContainer-tech-icon" />
             <h3 className="techContainer-articlesContainer-tech-title">
               Javascript
@@ -106,10 +99,6 @@ const Home = () => {
           <article className="techContainer-articlesContainer-tech">
             <FaCss3 className="techContainer-articlesContainer-tech-icon" />
             <h3 className="techContainer-articlesContainer-tech-title">CSS3</h3>
-          </article>
-          <article className="techContainer-articlesContainer-tech">
-            <SiJest className="techContainer-articlesContainer-tech-icon" />
-            <h3 className="techContainer-articlesContainer-tech-title">Jest</h3>
           </article>
         </div>
       </div>

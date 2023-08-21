@@ -1,8 +1,9 @@
 .homeSection {
+  margin: 2rem 0;
   display: grid;
   grid-template-rows: auto auto; /* Two rows */
-  grid-template-columns: auto auto;
-  justify-content: center;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
   align-items: center;
 }
 
@@ -60,6 +61,8 @@
 }
 
 .techContainer {
+  margin: 2rem 0;
+  width: 100%;
   position: relative;
   box-shadow: 2px 5px 15px 0px var(--clr-span1);
   border-radius: 1rem;
@@ -80,7 +83,7 @@
     z-index: -1;
   }
   &-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 2rem;
   }
 
@@ -142,7 +145,6 @@
 }
 @media only screen and (min-width: 1000px) {
   .homeInfoContainer-description {
-    max-width: 36rem;
     font-size: 1.5rem;
   }
 }
