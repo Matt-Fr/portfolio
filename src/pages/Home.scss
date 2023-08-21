@@ -116,6 +116,8 @@
   border-radius: 50%;
   grid-column-start: 2;
   grid-column-end: 3;
+  opacity: 85%;
+  box-shadow: 2px 5px 10px 0px var(--clr-span1);
 
   &-img {
     width: 100%;
