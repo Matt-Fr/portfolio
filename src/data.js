@@ -30,6 +30,19 @@ const data = [
     linkGithub: "https://github.com/Matt-Fr/Franck_Matthieu_11_26042022",
   },
   {
+    id: 6,
+    title: "SportSee",
+    logo: logoSportsee,
+    picture: sportsee,
+    descriptionEn:
+      "The Sportsee application is a dashboard which uses data (calories burned, length of workout, etc.) from an external API to create data visualizations of the athletic performances of two individuals. The graphs were created using the Recharts library and the state management using a context hook. The welcome interface contains four buttons for the two individuals: two buttons bring the user to the data visualizations based on the external API, and two buttons also display data visualizations for the same two individuals but this time pulling mock data. The application is not designed for tablet or mobile use (1024 pixels or higher).",
+    descriptionFr:
+      "L’application Sportsee est un Dashboard utilisant les données d’une API externe et permettant de visualiser les performances sportives des utilisateurs. Les graphs ont été réalisés grâce à la librairie Recharts et le state management grâce à un context. L’interface de l’accueil nous renvoie vers les données de deux utilisateurs (soit venant des données de l’API, soit des données mockées). L’application n’est pas conçue pour tablette et mobile (1024 pixels et plus).",
+    tags: ["React", "React Router", "Context", "Recharts"],
+    demo: "https://mattfr-sportsee.netlify.app/",
+    linkGithub: "https://github.com/Matt-Fr/Franck_Matthieu_12_17052022",
+  },
+  {
     id: 8,
     title: "Portfolio",
     logo: logoPortfolio,
@@ -41,7 +54,6 @@ const data = [
     tags: ["React", "React Router", "useContext"],
     linkGithub: "https://github.com/Matt-Fr/portfolio",
   },
-
   {
     id: 7,
     title: "Argent Bank",
@@ -55,17 +67,17 @@ const data = [
     linkGithub: "https://github.com/Matt-Fr/franck_matthieu_13_21092022",
   },
   {
-    id: 6,
-    title: "SportSee",
-    logo: logoSportsee,
-    picture: sportsee,
+    id: 3,
+    title: "Les Petits Plats",
+    logo: logoLesPetitsPlats,
+    picture: lesPetitsPlats,
     descriptionEn:
-      "The Sportsee application is a dashboard which uses data (calories burned, length of workout, etc.) from an external API to create data visualizations of the athletic performances of two individuals. The graphs were created using the Recharts library and the state management using a context hook. The welcome interface contains four buttons for the two individuals: two buttons bring the user to the data visualizations based on the external API, and two buttons also display data visualizations for the same two individuals but this time pulling mock data. The application is not designed for tablet or mobile use (1024 pixels or higher).",
+      "Les Petits Plats is a website developed using vanilla JavaScript which allows the user to enter multiple search criteria using pre-set filters and a search bar to search a database of 50 recipes. The principal skill showcased within this project is the development of an algorithm to display information based on the searched criteria.",
     descriptionFr:
-      "L’application Sportsee est un Dashboard utilisant les données d’une API externe et permettant de visualiser les performances sportives des utilisateurs. Les graphs ont été réalisés grâce à la librairie Recharts et le state management grâce à un context. L’interface de l’accueil nous renvoie vers les données de deux utilisateurs (soit venant des données de l’API, soit des données mockées). L’application n’est pas conçue pour tablette et mobile (1024 pixels et plus).",
-    tags: ["React", "React Router", "Context", "Recharts"],
-    demo: "https://mattfr-sportsee.netlify.app/",
-    linkGithub: "https://github.com/Matt-Fr/Franck_Matthieu_12_17052022",
+      "Les Petits Plats est un site web développé en JavaScript vanilla permettant de rechercher des recettes de cuisines à l’aide de différents filtres ainsi que plusieurs barres de recherche. Parmi les compétences ciblées : développer un algorithme pour résoudre un problème, analyser un problème informatique.",
+    tags: ["Vanilla JS", "HTML & CSS", "Responsive"],
+    demo: "https://mattfr-les-petits-plats.netlify.app/",
+    linkGithub: "https://github.com/Matt-Fr/FranckMatthieu_7_03012022",
   },
 
   {
@@ -82,19 +94,6 @@ const data = [
     linkGithub: "https://github.com/Matt-Fr/film_finder",
   },
 
-  {
-    id: 3,
-    title: "Les Petits Plats",
-    logo: logoLesPetitsPlats,
-    picture: lesPetitsPlats,
-    descriptionEn:
-      "Les Petits Plats is a website developed using vanilla JavaScript which allows the user to enter multiple search criteria using pre-set filters and a search bar to search a database of 50 recipes. The principal skill showcased within this project is the development of an algorithm to display information based on the searched criteria.",
-    descriptionFr:
-      "Les Petits Plats est un site web développé en JavaScript vanilla permettant de rechercher des recettes de cuisines à l’aide de différents filtres ainsi que plusieurs barres de recherche. Parmi les compétences ciblées : développer un algorithme pour résoudre un problème, analyser un problème informatique.",
-    tags: ["Vanilla JS", "HTML & CSS", "Responsive"],
-    demo: "https://mattfr-les-petits-plats.netlify.app/",
-    linkGithub: "https://github.com/Matt-Fr/FranckMatthieu_7_03012022",
-  },
   {
     id: 2,
     title: "Fisheye",

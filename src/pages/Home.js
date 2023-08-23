@@ -7,7 +7,6 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaSass } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiRedux } from "react-icons/si";
 import pdf from "../assets/CV-Matthieu-Franck.pdf";
 import { SiNextdotjs, SiTypescript } from "react-icons/si";
 import { default as AuthorPic } from "../assets/meupdatedb&w.jpg";
