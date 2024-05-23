@@ -5,7 +5,7 @@ import logoFisheye from "./assets/logoFisheye.svg";
 import movieFinder from "./assets/movieFinder.jpg";
 import fisheye from "./assets/fisheye.jpg";
 import logoLesPetitsPlats from "./assets/logoLesPetitsPlats.svg";
-import logoPokedex from "./assets/logoPokedex.svg";
+import logoPokedex from "./assets/logoPokemon.svg";
 import lesPetitsPlats from "./assets/lespetitsplats.jpg";
 import ohmyfood from "./assets/ohmyfood.jpg";
 import logoOhmyfood from "./assets/logoOhmyfood.svg";
