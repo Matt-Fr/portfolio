@@ -5,6 +5,7 @@ import logoFisheye from "./assets/logoFisheye.svg";
 import movieFinder from "./assets/movieFinder.jpg";
 import fisheye from "./assets/fisheye.jpg";
 import logoLesPetitsPlats from "./assets/logoLesPetitsPlats.svg";
+import logoPokedex from "./assets/logoPokedex.svg";
 import lesPetitsPlats from "./assets/lespetitsplats.jpg";
 import ohmyfood from "./assets/ohmyfood.jpg";
 import logoOhmyfood from "./assets/logoOhmyfood.svg";
@@ -14,6 +15,7 @@ import logoArgentBank from "./assets/logoArgentBank.svg";
 import logoPortfolio from "./assets/logoPortfolio.svg";
 import argentBank from "./assets/argentBank.jpg";
 import portfolio from "./assets/portfolio.jpg";
+import pokedex from "./assets/pokedex.jpg";
 
 const data = [
   {
@@ -28,6 +30,19 @@ const data = [
     tags: ["Typescript", "Next.js", "Tailwind CSS", "Responsive"],
     demo: "https://kasa-matt-fr.vercel.app/",
     linkGithub: "https://github.com/Matt-Fr/Franck_Matthieu_11_26042022",
+  },
+  {
+    id: 9,
+    title: "Pokedex",
+    logo: logoPokedex,
+    picture: pokedex,
+    descriptionEn:
+      "This application is a classic Pokédex that I developed for a test. It uses GraphQL to interact with the beta version of the Pokémon API, along with Tailwind CSS and Next.js in TypeScript. You can search for a Pokémon and view its detailed characteristics.",
+    descriptionFr:
+      "Cette application est un Pokédex classique que j'ai développée pour un test. Elle utilise GraphQL pour interagir avec la version bêta de l'API Pokémon, ainsi que Tailwind CSS et Next.js en TypeScript. Vous pouvez rechercher un Pokémon et consulter ses caractéristiques détaillées.",
+    tags: ["Typescript", "Next.js", "Graphql"],
+    demo: "https://mattfr-pokedex.netlify.app/",
+    linkGithub: "https://github.com/Matt-Fr/technical-test-pokedex",
   },
   {
     id: 6,
